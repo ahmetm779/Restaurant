@@ -26,13 +26,14 @@ namespace Restaurant
         #endregion
 
         cGenel gnl = new cGenel();
-        public string SessionSum(int state)
+        public string SessionSum(int state, string masaId)
         {
             string dt = "";
             SqlConnection con = new SqlConnection(gnl.conString);
-            SqlCommand cmd = new SqlCommand("select Tarih,MasaId from Adisyonlar Right Join Masalar on Adisyonlar.MasaId=Masalar.ID where Masalar.Durum=@durum and Adisyonlar.Durum=0", con);
+            SqlCommand cmd = new SqlCommand("select Tarih,MasaId from Adisyonlar Right Join Masalar on Adisyonlar.MasaId=Masalar.ID where Masalar.Durum=@durum and Adisyonlar.Durum=0 and Masalar.ID=@masaId", con);
             SqlDataReader dr = null;
             cmd.Parameters.Add("@durum", SqlDbType.Int).Value = state;
+            cmd.Parameters.Add("@masaId", SqlDbType.Int).Value = Convert.ToInt32(masaId);
 
             try
             {
@@ -64,7 +65,16 @@ namespace Restaurant
         {
             string aa = TableValue;
             int length = aa.Length;
-            return Convert.ToInt32(aa.Substring(length - 1, 1));
+            string masaNo = "";
+            if (length > 8)
+            {
+                masaNo = aa.Substring(length - 2, 2);
+            }
+            else
+            {
+                masaNo = aa.Substring(length - 1, 1);
+            }
+            return Convert.ToInt32(masaNo);
         }
 
         public bool TableGetByState(int ButtonName, int state)
@@ -94,19 +104,30 @@ namespace Restaurant
             return result;
         }
 
-        public void SetChangeTableState(string ButonName,int state)
+        public void SetChangeTableState(string ButonName, int state)
         {
             SqlConnection con = new SqlConnection(gnl.conString);
             SqlCommand cmd = new SqlCommand("update Masalar set Durum=@Durum where ID=@MasaNo", con);
-
-            if (con.State==ConnectionState.Closed)
+            string masaNo = "";
+            if (con.State == ConnectionState.Closed)
             {
                 con.Open();
             }
             string aa = ButonName;
             int uzunluk = aa.Length;
             cmd.Parameters.Add("@Durum", SqlDbType.Int).Value = state;
-            cmd.Parameters.Add("@MasaNo", SqlDbType.Int).Value = aa.Substring(uzunluk - 1, 1);
+            if (uzunluk > 8)
+            {
+                masaNo = aa.Substring(uzunluk - 2, 2);
+            }
+            else
+            {
+                masaNo = aa.Substring(uzunluk - 1, 1);
+            }
+
+            cmd.Parameters.Add("@MasaNo", SqlDbType.Int).Value = masaNo;
+
+
             cmd.ExecuteNonQuery();
             con.Dispose();
             con.Close();

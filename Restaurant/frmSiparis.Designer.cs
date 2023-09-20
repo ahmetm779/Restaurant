@@ -297,6 +297,7 @@ namespace Restaurant
             this.lvSiparisler.TabIndex = 0;
             this.lvSiparisler.UseCompatibleStateImageBehavior = false;
             this.lvSiparisler.View = System.Windows.Forms.View.Details;
+            this.lvSiparisler.DoubleClick += new System.EventHandler(this.lvSiparisler_DoubleClick);
             // 
             // columnHeader4
             // 
@@ -332,6 +333,7 @@ namespace Restaurant
             this.txtAra.Name = "txtAra";
             this.txtAra.Size = new System.Drawing.Size(168, 42);
             this.txtAra.TabIndex = 4;
+            this.txtAra.TextChanged += new System.EventHandler(this.txtAra_TextChanged);
             // 
             // label1
             // 
@@ -511,6 +513,7 @@ namespace Restaurant
             this.btnOdeme.Size = new System.Drawing.Size(140, 86);
             this.btnOdeme.TabIndex = 1;
             this.btnOdeme.UseVisualStyleBackColor = true;
+            this.btnOdeme.Click += new System.EventHandler(this.btnOdeme_Click);
             // 
             // btnSiparis
             // 

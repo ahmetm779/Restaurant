@@ -4,6 +4,9 @@
     <Compile Update="frmAyarlar.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="frmBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="frmGiris.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -19,10 +22,13 @@
     <Compile Update="frmMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="frmMusteriler.cs">
+    <Compile Update="frmMusteriAra.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="frmMutfak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmPaketSiparis.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="frmRaporlar.cs">
@@ -34,5 +40,16 @@
     <Compile Update="frmSiparis.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="frmSiparisKontrol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="MusteriEkleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="DataSet1.xsd">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
 </Project>

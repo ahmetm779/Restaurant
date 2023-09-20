@@ -26,8 +26,13 @@ C:\Users\100103\Desktop\Ders\Kafe\Restaurant\obj\Debug\netcoreapp3.1\Restaurant.
 C:\Users\100103\Desktop\Ders\Kafe\Restaurant\obj\Debug\netcoreapp3.1\Restaurant.frmMasalar.resources
 C:\Users\100103\Desktop\Ders\Kafe\Restaurant\obj\Debug\netcoreapp3.1\Restaurant.frmKasaIslemleri.resources
 C:\Users\100103\Desktop\Ders\Kafe\Restaurant\obj\Debug\netcoreapp3.1\Restaurant.frmKitle.resources
-C:\Users\100103\Desktop\Ders\Kafe\Restaurant\obj\Debug\netcoreapp3.1\Restaurant.frmMusteriler.resources
 C:\Users\100103\Desktop\Ders\Kafe\Restaurant\obj\Debug\netcoreapp3.1\Restaurant.frmMutfak.resources
 C:\Users\100103\Desktop\Ders\Kafe\Restaurant\obj\Debug\netcoreapp3.1\Restaurant.frmRaporlar.resources
 C:\Users\100103\Desktop\Ders\Kafe\Restaurant\obj\Debug\netcoreapp3.1\Restaurant.frmRezervasyon.resources
 C:\Users\100103\Desktop\Ders\Kafe\Restaurant\obj\Debug\netcoreapp3.1\Restaurant.frmSiparis.resources
+C:\Users\100103\Desktop\Ders\Kafe\Restaurant\obj\Debug\netcoreapp3.1\Restaurant.frmBill.resources
+C:\Users\100103\Desktop\Ders\Kafe\Restaurant\obj\Debug\netcoreapp3.1\Restaurant.frmMusteriAra.resources
+C:\Users\100103\Desktop\Ders\Kafe\Restaurant\obj\Debug\netcoreapp3.1\Restaurant.MusteriEkleme.resources
+C:\Users\100103\Desktop\Ders\Kafe\Restaurant\obj\Debug\netcoreapp3.1\Restaurant.frmPaketSiparis.resources
+C:\Users\100103\Desktop\Ders\Kafe\Restaurant\obj\Debug\netcoreapp3.1\Restaurant.frmSiparisKontrol.resources
+C:\Users\100103\Desktop\Ders\Kafe\Restaurant\obj\Debug\netcoreapp3.1\Restaurant.frmAyarlar.resources

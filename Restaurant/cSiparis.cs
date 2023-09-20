@@ -32,7 +32,7 @@ namespace Restaurant
             SqlConnection con = new SqlConnection(gnl.conString);
             SqlCommand cmd = new SqlCommand("select UrunAd,Fiyat,Satislar.ID,UrunId,Satislar.Adet from Satislar INNER JOIN Urunler on Satislar.UrunId=Urunler.ID where AdisyonId=@AdisyonId", con);
             SqlDataReader dr = null;
-            cmd.Parameters.Add("@AdisyonId", SqlDbType.Int).Value = AdisyonId;
+            cmd.Parameters.Add("@AdisyonId", SqlDbType.Int).Value = adisyon;
             try
             {
                 if (con.State == ConnectionState.Closed)
@@ -85,6 +85,84 @@ namespace Restaurant
                 con.Close();
             }
             return sonuc;
+        }
+        public void SetDeleteOrder(int satisId)
+        {
+            SqlConnection con = new SqlConnection(gnl.conString);
+            SqlCommand cmd = new SqlCommand("Delete from Satislar where ID=@SatisId", con);
+            cmd.Parameters.Add("@SatisId", SqlDbType.Int).Value = satisId;
+            if (con.State == ConnectionState.Closed)
+            {
+                con.Open();
+            }
+            cmd.ExecuteNonQuery();
+            con.Dispose();
+            con.Close();
+        }
+        public decimal GenelToplamBul(int musteriId)
+        {
+            decimal genelToplam = 0;
+            SqlConnection con = new SqlConnection(gnl.conString);
+            SqlCommand cmd = new SqlCommand("SELECT SUM(dbo.Satislar.Adet * dbo.Urunler.Fiyat) AS Fiyat FROM dbo.Musteriler INNER JOIN dbo.PaketSiparis " +
+                "ON dbo.Musteriler.ID = dbo.PaketSiparis.MusteriId INNER JOIN Adisyonlar on Adisyonlar.ID = PaketSiparis.AdisyonId INNER JOIN dbo.Satislar " +
+                "ON dbo.Adisyonlar.ID = dbo.Satislar.AdisyonId INNER JOIN dbo.Urunler ON dbo.Satislar.UrunId = dbo.Urunler.ID " +
+                "WHERE(dbo.PaketSiparis.MusteriId = @MusteriId) AND(dbo.PaketSiparis.Durum = 0)", con);
+            cmd.Parameters.Add("@MusteriId", SqlDbType.Int).Value = musteriId;
+            try
+            {
+                if (con.State == ConnectionState.Closed)
+                {
+                    con.Open();
+                }
+
+                genelToplam = Convert.ToDecimal(cmd.ExecuteScalar());
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                con.Dispose();
+                con.Close();
+            }
+            return genelToplam;
+        }
+
+        public void PaketSiparisAdisyonDetaylari(ListView lv, int adisyonId)
+        {
+            lv.Items.Clear();
+            decimal genelToplam = 0;
+            SqlConnection con = new SqlConnection(gnl.conString);
+            SqlCommand cmd = new SqlCommand("select Satislar.ID as SatisId,Urunler.UrunAd,Urunler.Fiyat,Satislar.Adet from Satislar INNER JOIN Adisyonlar on Adisyonlar.ID=Satislar.AdisyonId INNER JOIN Urunler on Urunler.ID=Satislar.UrunId where Satislar.AdisyonId=@adisyonId", con);
+            cmd.Parameters.Add("@adisyonId", SqlDbType.Int).Value = adisyonId;
+            SqlDataReader dr = null;
+            try
+            {
+                if (con.State == ConnectionState.Closed)
+                {
+                    con.Open();
+                }
+                int i = 0;
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    lv.Items.Add(dr["SatisId"].ToString());
+                    lv.Items[i].SubItems.Add(dr["UrunAd"].ToString());
+                    lv.Items[i].SubItems.Add(dr["Adet"].ToString());
+                    lv.Items[i].SubItems.Add(dr["Fiyat"].ToString());
+                    i++;
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                con.Dispose();
+                con.Close();
+            }
         }
     }
 }

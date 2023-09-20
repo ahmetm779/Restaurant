@@ -83,5 +83,146 @@ namespace Restaurant
             }
             return sonuc;
         }
+        public void AdisyonKapat(int adisyonId, int durum)
+        {
+
+            SqlConnection con = new SqlConnection(gnl.conString);
+            SqlCommand cmd = new SqlCommand("update Adisyonlar set Durum = @Durum where ID=@adisyonId", con);
+            try
+            {
+                if (con.State == ConnectionState.Closed)
+                {
+                    con.Open();
+                }
+                cmd.Parameters.Add("@adisyonId", SqlDbType.Int).Value = adisyonId;
+                cmd.Parameters.Add("@Durum", SqlDbType.Int).Value = durum;
+                cmd.ExecuteNonQuery();
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                con.Dispose();
+                con.Close();
+            }
+        }
+        public int PaketAdisyonAdediBul()
+        {
+            int miktar = 0;
+            SqlConnection con = new SqlConnection(gnl.conString);
+            SqlCommand cmd = new SqlCommand("select count(*) as Sayi from Adisyonlar where Durum=0 and ServisTurNo=2", con);
+            if (con.State == ConnectionState.Closed)
+            {
+                con.Open();
+            }
+            try
+            {
+                miktar = Convert.ToInt32(cmd.ExecuteScalar());
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            con.Dispose();
+            con.Close();
+            return miktar;
+        }
+        public void AcikPaketAdisyonlar(ListView lv)
+        {
+            lv.Items.Clear();
+
+            SqlConnection con = new SqlConnection(gnl.conString);
+            SqlCommand cmd = new SqlCommand("select PaketSiparis.MusteriId,Musteriler.Ad + ' ' + Musteriler.Soyad as Musteri, Adisyonlar.ID as AdisyonId from PaketSiparis INNER JOIN Musteriler on Musteriler.ID=PaketSiparis.MusteriId INNER JOIN Adisyonlar on Adisyonlar.ID=PaketSiparis.AdisyonId where Adisyonlar.Durum=0", con);
+            SqlDataReader dr = null;
+            try
+            {
+                if (con.State == ConnectionState.Closed)
+                {
+                    con.Open();
+                }
+                dr = cmd.ExecuteReader();
+                int i = 0;
+                while (dr.Read())
+                {
+                    lv.Items.Add(dr["MusteriId"].ToString());
+                    lv.Items[i].SubItems.Add(dr["Musteri"].ToString());
+                    lv.Items[i].SubItems.Add(dr["AdisyonId"].ToString());
+                    i++;
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                dr.Close();
+                con.Dispose();
+                con.Close();
+            }
+        }
+        public int MusterininSonAdisyonId(int musteriId)
+        {
+            int sonuc = 0;
+
+            SqlConnection con = new SqlConnection(gnl.conString);
+            SqlCommand cmd = new SqlCommand("select Adisyonlar.ID from Adisyonlar INNER JOIN PaketSiparis on PaketSiparis.AdisyonId=Adisyonlar.ID where PaketSiparis.Durum=0 and Adisyonlar.Durum=0 and PaketSiparis.MusteriId=@MusteriId", con);
+
+            try
+            {
+                if (con.State == ConnectionState.Closed)
+                {
+                    con.Open();
+                }
+                cmd.Parameters.Add("@MusteriId", SqlDbType.Int).Value = musteriId;
+                sonuc = Convert.ToInt32(cmd.ExecuteScalar());
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                con.Dispose();
+                con.Close();
+            }
+
+            return sonuc;
+        }
+
+        public void MusteriDetaylari(ListView lv, int musteriId)
+        {
+            lv.Items.Clear();
+            SqlConnection con = new SqlConnection(gnl.conString);
+            SqlCommand cmd = new SqlCommand("select PaketSiparis.MusteriId,PaketSiparis.AdisyonId,Musteriler.Ad,Musteriler.Soyad,CONVERT(varchar(10),Adisyonlar.Tarih,104) as Tarih from Adisyonlar INNER JOIN PaketSiparis on PaketSiparis.AdisyonId = Adisyonlar.ID INNER JOIN Musteriler on Musteriler.ID = PaketSiparis.MusteriId where Adisyonlar.ServisTurNo = 2 and Adisyonlar.Durum = 0 and PaketSiparis.MusteriId = @MusteriId", con);
+            cmd.Parameters.Add("@MusteriId", SqlDbType.Int).Value = musteriId;
+            SqlDataReader dr = null;
+            if (con.State == ConnectionState.Closed)
+            {
+                con.Open();
+            }
+            try
+            {
+                dr = cmd.ExecuteReader();
+                int i = 0;
+                while (dr.Read())
+                {
+                    lv.Items.Add(dr["MusteriId"].ToString());
+                    lv.Items[i].SubItems.Add(dr["Ad"].ToString());
+                    lv.Items[i].SubItems.Add(dr["Soyad"].ToString());
+                    lv.Items[i].SubItems.Add(dr["Tarih"].ToString());
+                    lv.Items[i].SubItems.Add(dr["AdisyonId"].ToString());
+                    i++;
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            con.Dispose();
+            con.Close();
+        }
     }
 }

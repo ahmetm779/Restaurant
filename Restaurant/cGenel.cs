@@ -12,5 +12,12 @@ namespace Restaurant
 
         public static string _ButtonValue;
         public static string _ButtonName;
+
+        public static int _ServisTurNo;
+        public static string _AdisyonId;
+
+        public static int _musteriEkle;
+
+        public static int _musteriId;
     }
 }

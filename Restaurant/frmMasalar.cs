@@ -165,9 +165,9 @@ namespace Restaurant
                         else if (item.Name == "btnMasa" + dr["ID"].ToString() && dr["Durum"].ToString() == "2")
                         {
                             cMasalar ms = new cMasalar();
-                            DateTime dt1 = Convert.ToDateTime(ms.SessionSum(2));
+                            DateTime dt1 = Convert.ToDateTime(ms.SessionSum(2, dr["ID"].ToString()));
                             DateTime dt2 = DateTime.Now;
-                            string st1 = Convert.ToDateTime(ms.SessionSum(2)).ToShortTimeString();
+                            string st1 = Convert.ToDateTime(ms.SessionSum(2, dr["ID"].ToString())).ToShortTimeString();
                             string st2 = DateTime.Now.ToShortTimeString();
                             DateTime t1 = dt1.AddMinutes(DateTime.Parse(st1).TimeOfDay.TotalMinutes);
                             DateTime t2 = dt2.AddMinutes(DateTime.Parse(st2).TimeOfDay.TotalMinutes);

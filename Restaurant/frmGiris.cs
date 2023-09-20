@@ -51,7 +51,7 @@ namespace Restaurant
         {
             cPersonel p = (cPersonel)cbKullaniciAdi.SelectedItem;
             cGenel._personelId = p.PersonelId;
-            cGenel._gorevId = p.Gorevıd;
+            cGenel._gorevId = p.GorevId;
         }
 
         private void btnCikis_Click(object sender, EventArgs e)

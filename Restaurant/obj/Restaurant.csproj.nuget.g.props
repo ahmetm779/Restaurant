@@ -15,4 +15,7 @@
   <PropertyGroup>
     <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_ReportingServices_ReportViewerControl_WebForms Condition=" '$(PkgMicrosoft_ReportingServices_ReportViewerControl_WebForms)' == '' ">C:\Users\100103\.nuget\packages\microsoft.reportingservices.reportviewercontrol.webforms\150.1586.0</PkgMicrosoft_ReportingServices_ReportViewerControl_WebForms>
+  </PropertyGroup>
 </Project>

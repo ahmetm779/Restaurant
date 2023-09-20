@@ -17,72 +17,72 @@ namespace Restaurant
 
         private void btnMasaSiparis_Click(object sender, EventArgs e)
         {
-            frmMasalar frm = new frmMasalar();
             this.Hide();
+            frmMasalar frm = new frmMasalar();
             frm.ShowDialog();
             this.Close();
         }
 
         private void btnRezervasyon_Click(object sender, EventArgs e)
         {
-            frmRezervasyon frm = new frmRezervasyon();
             this.Hide();
+            frmRezervasyon frm = new frmRezervasyon();
             frm.ShowDialog();
             this.Close();
         }
 
         private void btnPaketServis_Click(object sender, EventArgs e)
         {
-            frmSiparis frm = new frmSiparis();
             this.Hide();
+            frmSiparis frm = new frmSiparis();
             frm.ShowDialog();
             this.Close();
         }
 
         private void btnMusteriler_Click(object sender, EventArgs e)
         {
-            frmMusteriler frm = new frmMusteriler();
             this.Hide();
+            frmMusteriAra frm = new frmMusteriAra();
             frm.ShowDialog();
             this.Close();
         }
 
         private void btnKasaIslemleri_Click(object sender, EventArgs e)
         {
-            frmKasaIslemleri frm = new frmKasaIslemleri();
             this.Hide();
+            frmKasaIslemleri frm = new frmKasaIslemleri();
             frm.ShowDialog();
             this.Close();
         }
 
         private void btnMutfak_Click(object sender, EventArgs e)
         {
-            frmMutfak frm = new frmMutfak();
             this.Hide();
+            frmMutfak frm = new frmMutfak();
             frm.ShowDialog();
             this.Close();
         }
 
         private void btnRaporlar_Click(object sender, EventArgs e)
         {
-            frmRaporlar frm = new frmRaporlar();
             this.Hide();
+            frmRaporlar frm = new frmRaporlar();
             frm.ShowDialog();
             this.Close();
         }
 
         private void btnAyarlar_Click(object sender, EventArgs e)
         {
-            frmAyarlar frm = new frmAyarlar();
             this.Hide();
+            frmAyarlar frm = new frmAyarlar();
             frm.ShowDialog();
             this.Close();
         }
 
         private void btnKilit_Click(object sender, EventArgs e)
         {
-            frmKitle frm = new frmKitle();
             this.Hide();
+            frmKitle frm = new frmKitle();
             frm.ShowDialog();
             this.Close();
         }
