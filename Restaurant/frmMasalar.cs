@@ -26,6 +26,7 @@ namespace Restaurant
 
         private void btnGeriDon_Click(object sender, EventArgs e)
         {
+            this.Hide();
             frmMenu frm = new frmMenu();
             frm.Close();
             frm.ShowDialog();

@@ -33,7 +33,6 @@ namespace Restaurant
         int odemeTuru = 0;
         private void frmBill_Load(object sender, EventArgs e)
         {
-            gbIndirim.Visible = false;
             if (cGenel._ServisTurNo == 1)
             {
                 lblAdisyonId.Text = cGenel._AdisyonId;
@@ -51,7 +50,10 @@ namespace Restaurant
                     decimal kdv = Convert.ToDecimal(lblAraToplam.Text) * 18 / 100;
                     lblKdv.Text = string.Format("{0:0.000}", kdv);
                 }
-                gbIndirim.Visible = true;
+                if (chkIndirim.Checked)
+                    gbIndirim.Visible = true;
+                else
+                    gbIndirim.Visible = false;
                 txtIndirimTutari.Clear();
             }
             else if (cGenel._ServisTurNo == 2)
@@ -87,7 +89,10 @@ namespace Restaurant
                     decimal kdv = Convert.ToDecimal(lblAraToplam.Text) * 18 / 100;
                     lblKdv.Text = string.Format("{0:0.000}", kdv);
                 }
-                gbIndirim.Visible = true;
+                if (chkIndirim.Checked)
+                    gbIndirim.Visible = true;
+                else
+                    gbIndirim.Visible = false;
                 txtIndirimTutari.Clear();
             }
         }
@@ -218,7 +223,7 @@ namespace Restaurant
                 bool result = odeme.BillClose(odeme);
                 if (result)
                 {
-                    
+
 
                     cRezervasyon c = new cRezervasyon();
                     c.RezervasyonKapat(Convert.ToInt32(lblAdisyonId.Text));

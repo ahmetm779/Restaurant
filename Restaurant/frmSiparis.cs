@@ -26,9 +26,10 @@ namespace Restaurant
 
         private void btnGeriDon_Click(object sender, EventArgs e)
         {
+            this.Hide();
             frmMenu frm = new frmMenu();
-            this.Close();
             frm.ShowDialog();
+            this.Close();
         }
         //Hesap İşlemleri
         void islem(Object sender, EventArgs e)
@@ -208,12 +209,12 @@ namespace Restaurant
             }
             else if (masa.TableGetByState(tableId, 3) == true)
             {
-                
-                newAddition.ServisTurNo = 1;
-                newAddition.PersonelId = 1;
-                newAddition.MasaId = tableId;
-                newAddition.Tarih = DateTime.Now;
-                sonuc = newAddition.SetByAdditionNew(newAddition);
+
+                //newAddition.ServisTurNo = 1;
+                //newAddition.PersonelId = 1;
+                //newAddition.MasaId = tableId;
+                //newAddition.Tarih = DateTime.Now;
+                //sonuc = newAddition.SetByAdditionNew(newAddition);
                 masa.SetChangeTableState(cGenel._ButtonName, 4);
 
                 if (lvSiparisler.Items.Count > 0)

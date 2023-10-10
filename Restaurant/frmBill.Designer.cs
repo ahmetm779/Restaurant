@@ -30,459 +30,453 @@ namespace Restaurant
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBill));
-            this.lvUrunler = new System.Windows.Forms.ListView();
-            this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader7 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader6 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader8 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader9 = new System.Windows.Forms.ColumnHeader();
-            this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.chkIndirim = new System.Windows.Forms.CheckBox();
-            this.gbIndirim = new System.Windows.Forms.GroupBox();
-            this.txtIndirimTutari = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.lblAraToplam = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.lblFiyat = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.lblKdv = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.lblIndirim = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.rbTicket = new System.Windows.Forms.RadioButton();
-            this.rbKrediKart = new System.Windows.Forms.RadioButton();
-            this.rbNakit = new System.Windows.Forms.RadioButton();
-            this.btnCikis = new System.Windows.Forms.Button();
-            this.btnGeriDon = new System.Windows.Forms.Button();
-            this.btnHesapOzeti = new System.Windows.Forms.Button();
-            this.btnHesapKapat = new System.Windows.Forms.Button();
-            this.lblAdisyonId = new System.Windows.Forms.Label();
-            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
-            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
-            this.groupBox1.SuspendLayout();
-            this.gbIndirim.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.SuspendLayout();
+            lvUrunler = new System.Windows.Forms.ListView();
+            columnHeader4 = new System.Windows.Forms.ColumnHeader();
+            columnHeader5 = new System.Windows.Forms.ColumnHeader();
+            columnHeader7 = new System.Windows.Forms.ColumnHeader();
+            columnHeader6 = new System.Windows.Forms.ColumnHeader();
+            columnHeader8 = new System.Windows.Forms.ColumnHeader();
+            columnHeader9 = new System.Windows.Forms.ColumnHeader();
+            label1 = new System.Windows.Forms.Label();
+            groupBox1 = new System.Windows.Forms.GroupBox();
+            chkIndirim = new System.Windows.Forms.CheckBox();
+            gbIndirim = new System.Windows.Forms.GroupBox();
+            txtIndirimTutari = new System.Windows.Forms.TextBox();
+            label2 = new System.Windows.Forms.Label();
+            groupBox3 = new System.Windows.Forms.GroupBox();
+            label14 = new System.Windows.Forms.Label();
+            lblAraToplam = new System.Windows.Forms.Label();
+            label6 = new System.Windows.Forms.Label();
+            label13 = new System.Windows.Forms.Label();
+            lblFiyat = new System.Windows.Forms.Label();
+            label5 = new System.Windows.Forms.Label();
+            label12 = new System.Windows.Forms.Label();
+            lblKdv = new System.Windows.Forms.Label();
+            label4 = new System.Windows.Forms.Label();
+            label11 = new System.Windows.Forms.Label();
+            lblIndirim = new System.Windows.Forms.Label();
+            label3 = new System.Windows.Forms.Label();
+            groupBox4 = new System.Windows.Forms.GroupBox();
+            rbTicket = new System.Windows.Forms.RadioButton();
+            rbKrediKart = new System.Windows.Forms.RadioButton();
+            rbNakit = new System.Windows.Forms.RadioButton();
+            btnCikis = new System.Windows.Forms.Button();
+            btnGeriDon = new System.Windows.Forms.Button();
+            btnHesapOzeti = new System.Windows.Forms.Button();
+            btnHesapKapat = new System.Windows.Forms.Button();
+            lblAdisyonId = new System.Windows.Forms.Label();
+            printDocument1 = new System.Drawing.Printing.PrintDocument();
+            printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            groupBox1.SuspendLayout();
+            gbIndirim.SuspendLayout();
+            groupBox3.SuspendLayout();
+            groupBox4.SuspendLayout();
+            SuspendLayout();
             // 
             // lvUrunler
             // 
-            this.lvUrunler.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader4,
-            this.columnHeader5,
-            this.columnHeader7,
-            this.columnHeader6,
-            this.columnHeader8,
-            this.columnHeader9});
-            this.lvUrunler.FullRowSelect = true;
-            this.lvUrunler.GridLines = true;
-            this.lvUrunler.HideSelection = false;
-            this.lvUrunler.Location = new System.Drawing.Point(25, 83);
-            this.lvUrunler.Name = "lvUrunler";
-            this.lvUrunler.Size = new System.Drawing.Size(515, 192);
-            this.lvUrunler.TabIndex = 0;
-            this.lvUrunler.UseCompatibleStateImageBehavior = false;
-            this.lvUrunler.View = System.Windows.Forms.View.Details;
+            lvUrunler.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] { columnHeader4, columnHeader5, columnHeader7, columnHeader6, columnHeader8, columnHeader9 });
+            lvUrunler.FullRowSelect = true;
+            lvUrunler.GridLines = true;
+            lvUrunler.Location = new System.Drawing.Point(25, 83);
+            lvUrunler.Name = "lvUrunler";
+            lvUrunler.Size = new System.Drawing.Size(515, 192);
+            lvUrunler.TabIndex = 0;
+            lvUrunler.UseCompatibleStateImageBehavior = false;
+            lvUrunler.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "Ürün Adı";
-            this.columnHeader4.Width = 100;
+            columnHeader4.Text = "Ürün Adı";
+            columnHeader4.Width = 100;
             // 
             // columnHeader5
             // 
-            this.columnHeader5.Text = "Adet";
-            this.columnHeader5.Width = 50;
+            columnHeader5.Text = "Adet";
+            columnHeader5.Width = 50;
             // 
             // columnHeader7
             // 
-            this.columnHeader7.Text = "Ürün Id";
-            this.columnHeader7.Width = 100;
+            columnHeader7.Text = "Ürün Id";
+            columnHeader7.Width = 100;
             // 
             // columnHeader6
             // 
-            this.columnHeader6.Text = "Fiyat";
-            this.columnHeader6.Width = 90;
+            columnHeader6.Text = "Fiyat";
+            columnHeader6.Width = 90;
             // 
             // columnHeader8
             // 
-            this.columnHeader8.Text = "Satış Id";
-            this.columnHeader8.Width = 80;
+            columnHeader8.Text = "Satış Id";
+            columnHeader8.Width = 80;
             // 
             // columnHeader9
             // 
-            this.columnHeader9.Text = "Silinen Id";
-            this.columnHeader9.Width = 90;
+            columnHeader9.Text = "Silinen Id";
+            columnHeader9.Width = 90;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(25, 45);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(97, 24);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Siparişler";
+            label1.AutoSize = true;
+            label1.BackColor = System.Drawing.Color.Transparent;
+            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            label1.Location = new System.Drawing.Point(25, 45);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(97, 24);
+            label1.TabIndex = 1;
+            label1.Text = "Siparişler";
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.chkIndirim);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(570, 83);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(226, 125);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Özel İndirim";
+            groupBox1.BackColor = System.Drawing.Color.Transparent;
+            groupBox1.Controls.Add(chkIndirim);
+            groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            groupBox1.ForeColor = System.Drawing.Color.White;
+            groupBox1.Location = new System.Drawing.Point(570, 83);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new System.Drawing.Size(226, 125);
+            groupBox1.TabIndex = 1;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Özel İndirim";
             // 
             // chkIndirim
             // 
-            this.chkIndirim.AutoSize = true;
-            this.chkIndirim.Location = new System.Drawing.Point(18, 58);
-            this.chkIndirim.Name = "chkIndirim";
-            this.chkIndirim.Size = new System.Drawing.Size(199, 33);
-            this.chkIndirim.TabIndex = 0;
-            this.chkIndirim.Text = "İndirim Uygula";
-            this.chkIndirim.UseVisualStyleBackColor = true;
-            this.chkIndirim.CheckedChanged += new System.EventHandler(this.chkIndirim_CheckedChanged);
+            chkIndirim.AutoSize = true;
+            chkIndirim.Location = new System.Drawing.Point(18, 58);
+            chkIndirim.Name = "chkIndirim";
+            chkIndirim.Size = new System.Drawing.Size(199, 33);
+            chkIndirim.TabIndex = 0;
+            chkIndirim.Text = "İndirim Uygula";
+            chkIndirim.UseVisualStyleBackColor = true;
+            chkIndirim.CheckedChanged += chkIndirim_CheckedChanged;
             // 
             // gbIndirim
             // 
-            this.gbIndirim.BackColor = System.Drawing.Color.Transparent;
-            this.gbIndirim.Controls.Add(this.txtIndirimTutari);
-            this.gbIndirim.Controls.Add(this.label2);
-            this.gbIndirim.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.gbIndirim.ForeColor = System.Drawing.Color.White;
-            this.gbIndirim.Location = new System.Drawing.Point(813, 83);
-            this.gbIndirim.Name = "gbIndirim";
-            this.gbIndirim.Size = new System.Drawing.Size(268, 125);
-            this.gbIndirim.TabIndex = 2;
-            this.gbIndirim.TabStop = false;
-            this.gbIndirim.Text = "Özel Aktivite";
-            this.gbIndirim.Visible = false;
+            gbIndirim.BackColor = System.Drawing.Color.Transparent;
+            gbIndirim.Controls.Add(txtIndirimTutari);
+            gbIndirim.Controls.Add(label2);
+            gbIndirim.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            gbIndirim.ForeColor = System.Drawing.Color.White;
+            gbIndirim.Location = new System.Drawing.Point(813, 83);
+            gbIndirim.Name = "gbIndirim";
+            gbIndirim.Size = new System.Drawing.Size(268, 125);
+            gbIndirim.TabIndex = 2;
+            gbIndirim.TabStop = false;
+            gbIndirim.Text = "Özel Aktivite";
+            gbIndirim.Visible = false;
             // 
             // txtIndirimTutari
             // 
-            this.txtIndirimTutari.Location = new System.Drawing.Point(9, 69);
-            this.txtIndirimTutari.Name = "txtIndirimTutari";
-            this.txtIndirimTutari.Size = new System.Drawing.Size(247, 35);
-            this.txtIndirimTutari.TabIndex = 1;
-            this.txtIndirimTutari.TextChanged += new System.EventHandler(this.txtIndirimTutari_TextChanged);
+            txtIndirimTutari.Location = new System.Drawing.Point(9, 69);
+            txtIndirimTutari.Name = "txtIndirimTutari";
+            txtIndirimTutari.Size = new System.Drawing.Size(247, 35);
+            txtIndirimTutari.TabIndex = 1;
+            txtIndirimTutari.TextChanged += txtIndirimTutari_TextChanged;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 41);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(250, 29);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "İndirim Tutarı Giriniz";
+            label2.AutoSize = true;
+            label2.Location = new System.Drawing.Point(6, 41);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(250, 29);
+            label2.TabIndex = 0;
+            label2.Text = "İndirim Tutarı Giriniz";
             // 
             // groupBox3
             // 
-            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox3.Controls.Add(this.label14);
-            this.groupBox3.Controls.Add(this.lblAraToplam);
-            this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.label13);
-            this.groupBox3.Controls.Add(this.lblFiyat);
-            this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Controls.Add(this.label12);
-            this.groupBox3.Controls.Add(this.lblKdv);
-            this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.label11);
-            this.groupBox3.Controls.Add(this.lblIndirim);
-            this.groupBox3.Controls.Add(this.label3);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox3.ForeColor = System.Drawing.Color.White;
-            this.groupBox3.Location = new System.Drawing.Point(148, 297);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(369, 220);
-            this.groupBox3.TabIndex = 1;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Ödeme Bilgileri";
+            groupBox3.BackColor = System.Drawing.Color.Transparent;
+            groupBox3.Controls.Add(label14);
+            groupBox3.Controls.Add(lblAraToplam);
+            groupBox3.Controls.Add(label6);
+            groupBox3.Controls.Add(label13);
+            groupBox3.Controls.Add(lblFiyat);
+            groupBox3.Controls.Add(label5);
+            groupBox3.Controls.Add(label12);
+            groupBox3.Controls.Add(lblKdv);
+            groupBox3.Controls.Add(label4);
+            groupBox3.Controls.Add(label11);
+            groupBox3.Controls.Add(lblIndirim);
+            groupBox3.Controls.Add(label3);
+            groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            groupBox3.ForeColor = System.Drawing.Color.White;
+            groupBox3.Location = new System.Drawing.Point(148, 297);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Size = new System.Drawing.Size(369, 220);
+            groupBox3.TabIndex = 1;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "Ödeme Bilgileri";
             // 
             // label14
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(279, 159);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(44, 29);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "TL";
+            label14.AutoSize = true;
+            label14.Location = new System.Drawing.Point(279, 159);
+            label14.Name = "label14";
+            label14.Size = new System.Drawing.Size(44, 29);
+            label14.TabIndex = 0;
+            label14.Text = "TL";
             // 
             // lblAraToplam
             // 
-            this.lblAraToplam.AutoSize = true;
-            this.lblAraToplam.Location = new System.Drawing.Point(167, 159);
-            this.lblAraToplam.Name = "lblAraToplam";
-            this.lblAraToplam.Size = new System.Drawing.Size(27, 29);
-            this.lblAraToplam.TabIndex = 0;
-            this.lblAraToplam.Text = "0";
+            lblAraToplam.AutoSize = true;
+            lblAraToplam.Location = new System.Drawing.Point(167, 159);
+            lblAraToplam.Name = "lblAraToplam";
+            lblAraToplam.Size = new System.Drawing.Size(27, 29);
+            lblAraToplam.TabIndex = 0;
+            lblAraToplam.Text = "0";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(0, 159);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(148, 29);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Ara Toplam";
+            label6.AutoSize = true;
+            label6.Location = new System.Drawing.Point(0, 159);
+            label6.Name = "label6";
+            label6.Size = new System.Drawing.Size(148, 29);
+            label6.TabIndex = 0;
+            label6.Text = "Ara Toplam";
             // 
             // label13
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(279, 119);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(44, 29);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "TL";
+            label13.AutoSize = true;
+            label13.Location = new System.Drawing.Point(279, 119);
+            label13.Name = "label13";
+            label13.Size = new System.Drawing.Size(44, 29);
+            label13.TabIndex = 0;
+            label13.Text = "TL";
             // 
             // lblFiyat
             // 
-            this.lblFiyat.AutoSize = true;
-            this.lblFiyat.Location = new System.Drawing.Point(167, 119);
-            this.lblFiyat.Name = "lblFiyat";
-            this.lblFiyat.Size = new System.Drawing.Size(27, 29);
-            this.lblFiyat.TabIndex = 0;
-            this.lblFiyat.Text = "0";
+            lblFiyat.AutoSize = true;
+            lblFiyat.Location = new System.Drawing.Point(167, 119);
+            lblFiyat.Name = "lblFiyat";
+            lblFiyat.Size = new System.Drawing.Size(27, 29);
+            lblFiyat.TabIndex = 0;
+            lblFiyat.Text = "0";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(0, 119);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 29);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Fiyat";
+            label5.AutoSize = true;
+            label5.Location = new System.Drawing.Point(0, 119);
+            label5.Name = "label5";
+            label5.Size = new System.Drawing.Size(69, 29);
+            label5.TabIndex = 0;
+            label5.Text = "Fiyat";
             // 
             // label12
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(282, 75);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(44, 29);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "TL";
+            label12.AutoSize = true;
+            label12.Location = new System.Drawing.Point(282, 75);
+            label12.Name = "label12";
+            label12.Size = new System.Drawing.Size(44, 29);
+            label12.TabIndex = 0;
+            label12.Text = "TL";
             // 
             // lblKdv
             // 
-            this.lblKdv.AutoSize = true;
-            this.lblKdv.Location = new System.Drawing.Point(170, 75);
-            this.lblKdv.Name = "lblKdv";
-            this.lblKdv.Size = new System.Drawing.Size(27, 29);
-            this.lblKdv.TabIndex = 0;
-            this.lblKdv.Text = "0";
+            lblKdv.AutoSize = true;
+            lblKdv.Location = new System.Drawing.Point(170, 75);
+            lblKdv.Name = "lblKdv";
+            lblKdv.Size = new System.Drawing.Size(27, 29);
+            lblKdv.TabIndex = 0;
+            lblKdv.Text = "0";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 75);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 29);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "KDV";
+            label4.AutoSize = true;
+            label4.Location = new System.Drawing.Point(3, 75);
+            label4.Name = "label4";
+            label4.Size = new System.Drawing.Size(64, 29);
+            label4.TabIndex = 0;
+            label4.Text = "KDV";
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(282, 31);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(44, 29);
-            this.label11.TabIndex = 0;
-            this.label11.Text = "TL";
+            label11.AutoSize = true;
+            label11.Location = new System.Drawing.Point(282, 31);
+            label11.Name = "label11";
+            label11.Size = new System.Drawing.Size(44, 29);
+            label11.TabIndex = 0;
+            label11.Text = "TL";
             // 
             // lblIndirim
             // 
-            this.lblIndirim.AutoSize = true;
-            this.lblIndirim.Location = new System.Drawing.Point(170, 31);
-            this.lblIndirim.Name = "lblIndirim";
-            this.lblIndirim.Size = new System.Drawing.Size(27, 29);
-            this.lblIndirim.TabIndex = 0;
-            this.lblIndirim.Text = "0";
-            this.lblIndirim.TextChanged += new System.EventHandler(this.lblIndirim_TextChanged);
+            lblIndirim.AutoSize = true;
+            lblIndirim.Location = new System.Drawing.Point(170, 31);
+            lblIndirim.Name = "lblIndirim";
+            lblIndirim.Size = new System.Drawing.Size(27, 29);
+            lblIndirim.TabIndex = 0;
+            lblIndirim.Text = "0";
+            lblIndirim.TextChanged += lblIndirim_TextChanged;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 31);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 29);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "İndirim";
+            label3.AutoSize = true;
+            label3.Location = new System.Drawing.Point(3, 31);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(93, 29);
+            label3.TabIndex = 0;
+            label3.Text = "İndirim";
             // 
             // groupBox4
             // 
-            this.groupBox4.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox4.Controls.Add(this.rbTicket);
-            this.groupBox4.Controls.Add(this.rbKrediKart);
-            this.groupBox4.Controls.Add(this.rbNakit);
-            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox4.ForeColor = System.Drawing.Color.White;
-            this.groupBox4.Location = new System.Drawing.Point(570, 297);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(208, 220);
-            this.groupBox4.TabIndex = 2;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Ödeme Türü";
+            groupBox4.BackColor = System.Drawing.Color.Transparent;
+            groupBox4.Controls.Add(rbTicket);
+            groupBox4.Controls.Add(rbKrediKart);
+            groupBox4.Controls.Add(rbNakit);
+            groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            groupBox4.ForeColor = System.Drawing.Color.White;
+            groupBox4.Location = new System.Drawing.Point(570, 297);
+            groupBox4.Name = "groupBox4";
+            groupBox4.Size = new System.Drawing.Size(208, 220);
+            groupBox4.TabIndex = 2;
+            groupBox4.TabStop = false;
+            groupBox4.Text = "Ödeme Türü";
             // 
             // rbTicket
             // 
-            this.rbTicket.AutoSize = true;
-            this.rbTicket.Location = new System.Drawing.Point(27, 155);
-            this.rbTicket.Name = "rbTicket";
-            this.rbTicket.Size = new System.Drawing.Size(103, 33);
-            this.rbTicket.TabIndex = 0;
-            this.rbTicket.TabStop = true;
-            this.rbTicket.Text = "Ticket";
-            this.rbTicket.UseVisualStyleBackColor = true;
+            rbTicket.AutoSize = true;
+            rbTicket.Location = new System.Drawing.Point(27, 155);
+            rbTicket.Name = "rbTicket";
+            rbTicket.Size = new System.Drawing.Size(103, 33);
+            rbTicket.TabIndex = 0;
+            rbTicket.TabStop = true;
+            rbTicket.Text = "Ticket";
+            rbTicket.UseVisualStyleBackColor = true;
             // 
             // rbKrediKart
             // 
-            this.rbKrediKart.AutoSize = true;
-            this.rbKrediKart.Location = new System.Drawing.Point(27, 96);
-            this.rbKrediKart.Name = "rbKrediKart";
-            this.rbKrediKart.Size = new System.Drawing.Size(155, 33);
-            this.rbKrediKart.TabIndex = 0;
-            this.rbKrediKart.TabStop = true;
-            this.rbKrediKart.Text = "Kredi Kartı";
-            this.rbKrediKart.UseVisualStyleBackColor = true;
+            rbKrediKart.AutoSize = true;
+            rbKrediKart.Location = new System.Drawing.Point(27, 96);
+            rbKrediKart.Name = "rbKrediKart";
+            rbKrediKart.Size = new System.Drawing.Size(155, 33);
+            rbKrediKart.TabIndex = 0;
+            rbKrediKart.TabStop = true;
+            rbKrediKart.Text = "Kredi Kartı";
+            rbKrediKart.UseVisualStyleBackColor = true;
             // 
             // rbNakit
             // 
-            this.rbNakit.AutoSize = true;
-            this.rbNakit.Location = new System.Drawing.Point(27, 41);
-            this.rbNakit.Name = "rbNakit";
-            this.rbNakit.Size = new System.Drawing.Size(91, 33);
-            this.rbNakit.TabIndex = 0;
-            this.rbNakit.TabStop = true;
-            this.rbNakit.Text = "Nakit";
-            this.rbNakit.UseVisualStyleBackColor = true;
+            rbNakit.AutoSize = true;
+            rbNakit.Location = new System.Drawing.Point(27, 41);
+            rbNakit.Name = "rbNakit";
+            rbNakit.Size = new System.Drawing.Size(91, 33);
+            rbNakit.TabIndex = 0;
+            rbNakit.TabStop = true;
+            rbNakit.Text = "Nakit";
+            rbNakit.UseVisualStyleBackColor = true;
             // 
             // btnCikis
             // 
-            this.btnCikis.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCikis.BackgroundImage")));
-            this.btnCikis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCikis.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnCikis.Location = new System.Drawing.Point(65, 524);
-            this.btnCikis.Name = "btnCikis";
-            this.btnCikis.Size = new System.Drawing.Size(47, 53);
-            this.btnCikis.TabIndex = 14;
-            this.btnCikis.UseVisualStyleBackColor = true;
-            this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
+            btnCikis.BackgroundImage = (System.Drawing.Image)resources.GetObject("btnCikis.BackgroundImage");
+            btnCikis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            btnCikis.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            btnCikis.Location = new System.Drawing.Point(65, 524);
+            btnCikis.Name = "btnCikis";
+            btnCikis.Size = new System.Drawing.Size(47, 53);
+            btnCikis.TabIndex = 14;
+            btnCikis.UseVisualStyleBackColor = true;
+            btnCikis.Click += btnCikis_Click;
             // 
             // btnGeriDon
             // 
-            this.btnGeriDon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGeriDon.BackgroundImage")));
-            this.btnGeriDon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnGeriDon.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnGeriDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnGeriDon.Location = new System.Drawing.Point(12, 524);
-            this.btnGeriDon.Name = "btnGeriDon";
-            this.btnGeriDon.Size = new System.Drawing.Size(47, 53);
-            this.btnGeriDon.TabIndex = 15;
-            this.btnGeriDon.UseVisualStyleBackColor = true;
-            this.btnGeriDon.Click += new System.EventHandler(this.btnGeriDon_Click);
+            btnGeriDon.BackgroundImage = (System.Drawing.Image)resources.GetObject("btnGeriDon.BackgroundImage");
+            btnGeriDon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            btnGeriDon.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnGeriDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            btnGeriDon.Location = new System.Drawing.Point(12, 524);
+            btnGeriDon.Name = "btnGeriDon";
+            btnGeriDon.Size = new System.Drawing.Size(47, 53);
+            btnGeriDon.TabIndex = 15;
+            btnGeriDon.UseVisualStyleBackColor = true;
+            btnGeriDon.Click += btnGeriDon_Click;
             // 
             // btnHesapOzeti
             // 
-            this.btnHesapOzeti.BackgroundImage = global::Restaurant.Properties.Resources.hesapozeti;
-            this.btnHesapOzeti.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnHesapOzeti.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHesapOzeti.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnHesapOzeti.Location = new System.Drawing.Point(819, 302);
-            this.btnHesapOzeti.Name = "btnHesapOzeti";
-            this.btnHesapOzeti.Size = new System.Drawing.Size(190, 98);
-            this.btnHesapOzeti.TabIndex = 16;
-            this.btnHesapOzeti.UseVisualStyleBackColor = true;
-            this.btnHesapOzeti.Click += new System.EventHandler(this.btnHesapOzeti_Click);
+            btnHesapOzeti.BackgroundImage = Properties.Resources.hesapozeti;
+            btnHesapOzeti.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            btnHesapOzeti.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnHesapOzeti.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnHesapOzeti.Location = new System.Drawing.Point(819, 302);
+            btnHesapOzeti.Name = "btnHesapOzeti";
+            btnHesapOzeti.Size = new System.Drawing.Size(190, 98);
+            btnHesapOzeti.TabIndex = 16;
+            btnHesapOzeti.UseVisualStyleBackColor = true;
+            btnHesapOzeti.Click += btnHesapOzeti_Click;
             // 
             // btnHesapKapat
             // 
-            this.btnHesapKapat.BackgroundImage = global::Restaurant.Properties.Resources.hesapkapat;
-            this.btnHesapKapat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnHesapKapat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHesapKapat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnHesapKapat.Location = new System.Drawing.Point(819, 416);
-            this.btnHesapKapat.Name = "btnHesapKapat";
-            this.btnHesapKapat.Size = new System.Drawing.Size(190, 98);
-            this.btnHesapKapat.TabIndex = 16;
-            this.btnHesapKapat.UseVisualStyleBackColor = true;
-            this.btnHesapKapat.Click += new System.EventHandler(this.btnHesapKapat_Click);
+            btnHesapKapat.BackgroundImage = Properties.Resources.hesapkapat;
+            btnHesapKapat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            btnHesapKapat.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnHesapKapat.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnHesapKapat.Location = new System.Drawing.Point(819, 416);
+            btnHesapKapat.Name = "btnHesapKapat";
+            btnHesapKapat.Size = new System.Drawing.Size(190, 98);
+            btnHesapKapat.TabIndex = 16;
+            btnHesapKapat.UseVisualStyleBackColor = true;
+            btnHesapKapat.Click += btnHesapKapat_Click;
             // 
             // lblAdisyonId
             // 
-            this.lblAdisyonId.AutoSize = true;
-            this.lblAdisyonId.BackColor = System.Drawing.Color.Transparent;
-            this.lblAdisyonId.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblAdisyonId.ForeColor = System.Drawing.Color.DarkRed;
-            this.lblAdisyonId.Location = new System.Drawing.Point(128, 45);
-            this.lblAdisyonId.Name = "lblAdisyonId";
-            this.lblAdisyonId.Size = new System.Drawing.Size(27, 24);
-            this.lblAdisyonId.TabIndex = 1;
-            this.lblAdisyonId.Text = "Id";
+            lblAdisyonId.AutoSize = true;
+            lblAdisyonId.BackColor = System.Drawing.Color.Transparent;
+            lblAdisyonId.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            lblAdisyonId.ForeColor = System.Drawing.Color.DarkRed;
+            lblAdisyonId.Location = new System.Drawing.Point(128, 45);
+            lblAdisyonId.Name = "lblAdisyonId";
+            lblAdisyonId.Size = new System.Drawing.Size(27, 24);
+            lblAdisyonId.TabIndex = 1;
+            lblAdisyonId.Text = "Id";
             // 
             // printDocument1
             // 
-            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            printDocument1.PrintPage += printDocument1_PrintPage;
             // 
             // printPreviewDialog1
             // 
-            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
-            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
-            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
-            this.printPreviewDialog1.Document = this.printDocument1;
-            this.printPreviewDialog1.Enabled = true;
-            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
-            this.printPreviewDialog1.Name = "printPreviewDialog1";
-            this.printPreviewDialog1.Visible = false;
+            printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            printPreviewDialog1.Document = printDocument1;
+            printPreviewDialog1.Enabled = true;
+            printPreviewDialog1.Icon = (System.Drawing.Icon)resources.GetObject("printPreviewDialog1.Icon");
+            printPreviewDialog1.Name = "printPreviewDialog1";
+            printPreviewDialog1.Visible = false;
             // 
             // frmBill
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Restaurant.Properties.Resources.arkaplan;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1154, 589);
-            this.Controls.Add(this.btnHesapKapat);
-            this.Controls.Add(this.btnHesapOzeti);
-            this.Controls.Add(this.btnCikis);
-            this.Controls.Add(this.btnGeriDon);
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.gbIndirim);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.lblAdisyonId);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.lvUrunler);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Name = "frmBill";
-            this.Text = "frmBill";
-            this.Load += new System.EventHandler(this.frmBill_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.gbIndirim.ResumeLayout(false);
-            this.gbIndirim.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.arkaplan;
+            BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            ClientSize = new System.Drawing.Size(1154, 589);
+            Controls.Add(btnHesapKapat);
+            Controls.Add(btnHesapOzeti);
+            Controls.Add(btnCikis);
+            Controls.Add(btnGeriDon);
+            Controls.Add(groupBox4);
+            Controls.Add(gbIndirim);
+            Controls.Add(groupBox3);
+            Controls.Add(groupBox1);
+            Controls.Add(lblAdisyonId);
+            Controls.Add(label1);
+            Controls.Add(lvUrunler);
+            Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            Name = "frmBill";
+            Text = "HESAP ÖDEME";
+            WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            Load += frmBill_Load;
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            gbIndirim.ResumeLayout(false);
+            gbIndirim.PerformLayout();
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
+            groupBox4.ResumeLayout(false);
+            groupBox4.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

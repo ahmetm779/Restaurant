@@ -30,594 +30,578 @@ namespace Restaurant
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmSiparis));
-            this.lblMasaNo = new System.Windows.Forms.Label();
-            this.btnAnaYemek3 = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnAraSicaklar2 = new System.Windows.Forms.Button();
-            this.btnCorbalar1 = new System.Windows.Forms.Button();
-            this.btnSalatalar6 = new System.Windows.Forms.Button();
-            this.btnMakarnalar4 = new System.Windows.Forms.Button();
-            this.btnIcecekler8 = new System.Windows.Forms.Button();
-            this.btnFastFood5 = new System.Windows.Forms.Button();
-            this.btnTatlilar7 = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.lvMenu = new System.Windows.Forms.ListView();
-            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.lvSiparisler = new System.Windows.Forms.ListView();
-            this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader7 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader6 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader8 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader9 = new System.Windows.Forms.ColumnHeader();
-            this.txtAra = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btn7 = new System.Windows.Forms.Button();
-            this.btn8 = new System.Windows.Forms.Button();
-            this.btn9 = new System.Windows.Forms.Button();
-            this.btn4 = new System.Windows.Forms.Button();
-            this.btn5 = new System.Windows.Forms.Button();
-            this.btn6 = new System.Windows.Forms.Button();
-            this.btn3 = new System.Windows.Forms.Button();
-            this.btn2 = new System.Windows.Forms.Button();
-            this.btn1 = new System.Windows.Forms.Button();
-            this.btnTemizle = new System.Windows.Forms.Button();
-            this.btn0 = new System.Windows.Forms.Button();
-            this.txtAdet = new System.Windows.Forms.TextBox();
-            this.btnCikis = new System.Windows.Forms.Button();
-            this.btnGeriDon = new System.Windows.Forms.Button();
-            this.btnOdeme = new System.Windows.Forms.Button();
-            this.btnSiparis = new System.Windows.Forms.Button();
-            this.btnIptal = new System.Windows.Forms.Button();
-            this.lvYeniEklenenler = new System.Windows.Forms.ListView();
-            this.columnHeader10 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader11 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader12 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader13 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader14 = new System.Windows.Forms.ColumnHeader();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.SuspendLayout();
+            lblMasaNo = new System.Windows.Forms.Label();
+            btnAnaYemek3 = new System.Windows.Forms.Button();
+            groupBox1 = new System.Windows.Forms.GroupBox();
+            btnAraSicaklar2 = new System.Windows.Forms.Button();
+            btnCorbalar1 = new System.Windows.Forms.Button();
+            btnSalatalar6 = new System.Windows.Forms.Button();
+            btnMakarnalar4 = new System.Windows.Forms.Button();
+            btnIcecekler8 = new System.Windows.Forms.Button();
+            btnFastFood5 = new System.Windows.Forms.Button();
+            btnTatlilar7 = new System.Windows.Forms.Button();
+            groupBox2 = new System.Windows.Forms.GroupBox();
+            lvMenu = new System.Windows.Forms.ListView();
+            columnHeader1 = new System.Windows.Forms.ColumnHeader();
+            columnHeader2 = new System.Windows.Forms.ColumnHeader();
+            columnHeader3 = new System.Windows.Forms.ColumnHeader();
+            groupBox3 = new System.Windows.Forms.GroupBox();
+            lvSiparisler = new System.Windows.Forms.ListView();
+            columnHeader4 = new System.Windows.Forms.ColumnHeader();
+            columnHeader5 = new System.Windows.Forms.ColumnHeader();
+            columnHeader7 = new System.Windows.Forms.ColumnHeader();
+            columnHeader6 = new System.Windows.Forms.ColumnHeader();
+            columnHeader8 = new System.Windows.Forms.ColumnHeader();
+            columnHeader9 = new System.Windows.Forms.ColumnHeader();
+            txtAra = new System.Windows.Forms.TextBox();
+            label1 = new System.Windows.Forms.Label();
+            btn7 = new System.Windows.Forms.Button();
+            btn8 = new System.Windows.Forms.Button();
+            btn9 = new System.Windows.Forms.Button();
+            btn4 = new System.Windows.Forms.Button();
+            btn5 = new System.Windows.Forms.Button();
+            btn6 = new System.Windows.Forms.Button();
+            btn3 = new System.Windows.Forms.Button();
+            btn2 = new System.Windows.Forms.Button();
+            btn1 = new System.Windows.Forms.Button();
+            btnTemizle = new System.Windows.Forms.Button();
+            btn0 = new System.Windows.Forms.Button();
+            txtAdet = new System.Windows.Forms.TextBox();
+            btnCikis = new System.Windows.Forms.Button();
+            btnGeriDon = new System.Windows.Forms.Button();
+            btnOdeme = new System.Windows.Forms.Button();
+            btnSiparis = new System.Windows.Forms.Button();
+            btnIptal = new System.Windows.Forms.Button();
+            lvYeniEklenenler = new System.Windows.Forms.ListView();
+            columnHeader10 = new System.Windows.Forms.ColumnHeader();
+            columnHeader11 = new System.Windows.Forms.ColumnHeader();
+            columnHeader12 = new System.Windows.Forms.ColumnHeader();
+            columnHeader13 = new System.Windows.Forms.ColumnHeader();
+            columnHeader14 = new System.Windows.Forms.ColumnHeader();
+            groupBox1.SuspendLayout();
+            groupBox2.SuspendLayout();
+            groupBox3.SuspendLayout();
+            SuspendLayout();
             // 
             // lblMasaNo
             // 
-            this.lblMasaNo.AutoSize = true;
-            this.lblMasaNo.BackColor = System.Drawing.Color.Transparent;
-            this.lblMasaNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblMasaNo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lblMasaNo.Location = new System.Drawing.Point(28, 35);
-            this.lblMasaNo.Name = "lblMasaNo";
-            this.lblMasaNo.Size = new System.Drawing.Size(66, 24);
-            this.lblMasaNo.TabIndex = 0;
-            this.lblMasaNo.Text = "label1";
+            lblMasaNo.AutoSize = true;
+            lblMasaNo.BackColor = System.Drawing.Color.Transparent;
+            lblMasaNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            lblMasaNo.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            lblMasaNo.Location = new System.Drawing.Point(28, 35);
+            lblMasaNo.Name = "lblMasaNo";
+            lblMasaNo.Size = new System.Drawing.Size(66, 24);
+            lblMasaNo.TabIndex = 0;
+            lblMasaNo.Text = "label1";
             // 
             // btnAnaYemek3
             // 
-            this.btnAnaYemek3.BackgroundImage = global::Restaurant.Properties.Resources.anayemek;
-            this.btnAnaYemek3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAnaYemek3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAnaYemek3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAnaYemek3.Location = new System.Drawing.Point(6, 22);
-            this.btnAnaYemek3.Name = "btnAnaYemek3";
-            this.btnAnaYemek3.Size = new System.Drawing.Size(140, 86);
-            this.btnAnaYemek3.TabIndex = 0;
-            this.btnAnaYemek3.UseVisualStyleBackColor = true;
-            this.btnAnaYemek3.Click += new System.EventHandler(this.btnAnaYemek3_Click);
+            btnAnaYemek3.BackgroundImage = Properties.Resources.anayemek;
+            btnAnaYemek3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            btnAnaYemek3.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnAnaYemek3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnAnaYemek3.Location = new System.Drawing.Point(6, 22);
+            btnAnaYemek3.Name = "btnAnaYemek3";
+            btnAnaYemek3.Size = new System.Drawing.Size(140, 86);
+            btnAnaYemek3.TabIndex = 0;
+            btnAnaYemek3.UseVisualStyleBackColor = true;
+            btnAnaYemek3.Click += btnAnaYemek3_Click;
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.btnAraSicaklar2);
-            this.groupBox1.Controls.Add(this.btnCorbalar1);
-            this.groupBox1.Controls.Add(this.btnSalatalar6);
-            this.groupBox1.Controls.Add(this.btnMakarnalar4);
-            this.groupBox1.Controls.Add(this.btnIcecekler8);
-            this.groupBox1.Controls.Add(this.btnFastFood5);
-            this.groupBox1.Controls.Add(this.btnTatlilar7);
-            this.groupBox1.Controls.Add(this.btnAnaYemek3);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Location = new System.Drawing.Point(28, 83);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(297, 393);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Menü";
+            groupBox1.BackColor = System.Drawing.Color.Transparent;
+            groupBox1.Controls.Add(btnAraSicaklar2);
+            groupBox1.Controls.Add(btnCorbalar1);
+            groupBox1.Controls.Add(btnSalatalar6);
+            groupBox1.Controls.Add(btnMakarnalar4);
+            groupBox1.Controls.Add(btnIcecekler8);
+            groupBox1.Controls.Add(btnFastFood5);
+            groupBox1.Controls.Add(btnTatlilar7);
+            groupBox1.Controls.Add(btnAnaYemek3);
+            groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            groupBox1.ForeColor = System.Drawing.Color.White;
+            groupBox1.Location = new System.Drawing.Point(28, 83);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new System.Drawing.Size(297, 393);
+            groupBox1.TabIndex = 1;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Menü";
             // 
             // btnAraSicaklar2
             // 
-            this.btnAraSicaklar2.BackgroundImage = global::Restaurant.Properties.Resources.arasicaklar;
-            this.btnAraSicaklar2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnAraSicaklar2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAraSicaklar2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAraSicaklar2.Location = new System.Drawing.Point(152, 298);
-            this.btnAraSicaklar2.Name = "btnAraSicaklar2";
-            this.btnAraSicaklar2.Size = new System.Drawing.Size(140, 86);
-            this.btnAraSicaklar2.TabIndex = 0;
-            this.btnAraSicaklar2.UseVisualStyleBackColor = true;
-            this.btnAraSicaklar2.Click += new System.EventHandler(this.btnAraSicaklar2_Click);
+            btnAraSicaklar2.BackgroundImage = Properties.Resources.arasicaklar;
+            btnAraSicaklar2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            btnAraSicaklar2.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnAraSicaklar2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnAraSicaklar2.Location = new System.Drawing.Point(152, 298);
+            btnAraSicaklar2.Name = "btnAraSicaklar2";
+            btnAraSicaklar2.Size = new System.Drawing.Size(140, 86);
+            btnAraSicaklar2.TabIndex = 0;
+            btnAraSicaklar2.UseVisualStyleBackColor = true;
+            btnAraSicaklar2.Click += btnAraSicaklar2_Click;
             // 
             // btnCorbalar1
             // 
-            this.btnCorbalar1.BackgroundImage = global::Restaurant.Properties.Resources.corbalar;
-            this.btnCorbalar1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCorbalar1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCorbalar1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCorbalar1.Location = new System.Drawing.Point(152, 206);
-            this.btnCorbalar1.Name = "btnCorbalar1";
-            this.btnCorbalar1.Size = new System.Drawing.Size(140, 86);
-            this.btnCorbalar1.TabIndex = 0;
-            this.btnCorbalar1.UseVisualStyleBackColor = true;
-            this.btnCorbalar1.Click += new System.EventHandler(this.btnCorbalar1_Click);
+            btnCorbalar1.BackgroundImage = Properties.Resources.corbalar;
+            btnCorbalar1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            btnCorbalar1.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnCorbalar1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnCorbalar1.Location = new System.Drawing.Point(152, 206);
+            btnCorbalar1.Name = "btnCorbalar1";
+            btnCorbalar1.Size = new System.Drawing.Size(140, 86);
+            btnCorbalar1.TabIndex = 0;
+            btnCorbalar1.UseVisualStyleBackColor = true;
+            btnCorbalar1.Click += btnCorbalar1_Click;
             // 
             // btnSalatalar6
             // 
-            this.btnSalatalar6.BackgroundImage = global::Restaurant.Properties.Resources.salatalar;
-            this.btnSalatalar6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSalatalar6.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSalatalar6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSalatalar6.Location = new System.Drawing.Point(152, 114);
-            this.btnSalatalar6.Name = "btnSalatalar6";
-            this.btnSalatalar6.Size = new System.Drawing.Size(140, 86);
-            this.btnSalatalar6.TabIndex = 0;
-            this.btnSalatalar6.UseVisualStyleBackColor = true;
-            this.btnSalatalar6.Click += new System.EventHandler(this.btnSalatalar6_Click);
+            btnSalatalar6.BackgroundImage = Properties.Resources.salatalar;
+            btnSalatalar6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            btnSalatalar6.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnSalatalar6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnSalatalar6.Location = new System.Drawing.Point(152, 114);
+            btnSalatalar6.Name = "btnSalatalar6";
+            btnSalatalar6.Size = new System.Drawing.Size(140, 86);
+            btnSalatalar6.TabIndex = 0;
+            btnSalatalar6.UseVisualStyleBackColor = true;
+            btnSalatalar6.Click += btnSalatalar6_Click;
             // 
             // btnMakarnalar4
             // 
-            this.btnMakarnalar4.BackgroundImage = global::Restaurant.Properties.Resources.makarnalar;
-            this.btnMakarnalar4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMakarnalar4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMakarnalar4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnMakarnalar4.Location = new System.Drawing.Point(6, 298);
-            this.btnMakarnalar4.Name = "btnMakarnalar4";
-            this.btnMakarnalar4.Size = new System.Drawing.Size(140, 86);
-            this.btnMakarnalar4.TabIndex = 0;
-            this.btnMakarnalar4.UseVisualStyleBackColor = true;
-            this.btnMakarnalar4.Click += new System.EventHandler(this.btnMakarnalar4_Click);
+            btnMakarnalar4.BackgroundImage = Properties.Resources.makarnalar;
+            btnMakarnalar4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            btnMakarnalar4.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnMakarnalar4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnMakarnalar4.Location = new System.Drawing.Point(6, 298);
+            btnMakarnalar4.Name = "btnMakarnalar4";
+            btnMakarnalar4.Size = new System.Drawing.Size(140, 86);
+            btnMakarnalar4.TabIndex = 0;
+            btnMakarnalar4.UseVisualStyleBackColor = true;
+            btnMakarnalar4.Click += btnMakarnalar4_Click;
             // 
             // btnIcecekler8
             // 
-            this.btnIcecekler8.BackgroundImage = global::Restaurant.Properties.Resources.icecekler;
-            this.btnIcecekler8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnIcecekler8.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnIcecekler8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnIcecekler8.Location = new System.Drawing.Point(152, 22);
-            this.btnIcecekler8.Name = "btnIcecekler8";
-            this.btnIcecekler8.Size = new System.Drawing.Size(140, 86);
-            this.btnIcecekler8.TabIndex = 0;
-            this.btnIcecekler8.UseVisualStyleBackColor = true;
-            this.btnIcecekler8.Click += new System.EventHandler(this.btnIcecekler8_Click);
+            btnIcecekler8.BackgroundImage = Properties.Resources.icecekler;
+            btnIcecekler8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            btnIcecekler8.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnIcecekler8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnIcecekler8.Location = new System.Drawing.Point(152, 22);
+            btnIcecekler8.Name = "btnIcecekler8";
+            btnIcecekler8.Size = new System.Drawing.Size(140, 86);
+            btnIcecekler8.TabIndex = 0;
+            btnIcecekler8.UseVisualStyleBackColor = true;
+            btnIcecekler8.Click += btnIcecekler8_Click;
             // 
             // btnFastFood5
             // 
-            this.btnFastFood5.BackgroundImage = global::Restaurant.Properties.Resources.fastfood;
-            this.btnFastFood5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnFastFood5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFastFood5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnFastFood5.Location = new System.Drawing.Point(6, 206);
-            this.btnFastFood5.Name = "btnFastFood5";
-            this.btnFastFood5.Size = new System.Drawing.Size(140, 86);
-            this.btnFastFood5.TabIndex = 0;
-            this.btnFastFood5.UseVisualStyleBackColor = true;
-            this.btnFastFood5.Click += new System.EventHandler(this.btnFastFood5_Click);
+            btnFastFood5.BackgroundImage = Properties.Resources.fastfood;
+            btnFastFood5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            btnFastFood5.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnFastFood5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnFastFood5.Location = new System.Drawing.Point(6, 206);
+            btnFastFood5.Name = "btnFastFood5";
+            btnFastFood5.Size = new System.Drawing.Size(140, 86);
+            btnFastFood5.TabIndex = 0;
+            btnFastFood5.UseVisualStyleBackColor = true;
+            btnFastFood5.Click += btnFastFood5_Click;
             // 
             // btnTatlilar7
             // 
-            this.btnTatlilar7.BackgroundImage = global::Restaurant.Properties.Resources.tatlilar;
-            this.btnTatlilar7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnTatlilar7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTatlilar7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnTatlilar7.Location = new System.Drawing.Point(6, 114);
-            this.btnTatlilar7.Name = "btnTatlilar7";
-            this.btnTatlilar7.Size = new System.Drawing.Size(140, 86);
-            this.btnTatlilar7.TabIndex = 0;
-            this.btnTatlilar7.UseVisualStyleBackColor = true;
-            this.btnTatlilar7.Click += new System.EventHandler(this.btnTatlilar7_Click);
+            btnTatlilar7.BackgroundImage = Properties.Resources.tatlilar;
+            btnTatlilar7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            btnTatlilar7.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnTatlilar7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnTatlilar7.Location = new System.Drawing.Point(6, 114);
+            btnTatlilar7.Name = "btnTatlilar7";
+            btnTatlilar7.Size = new System.Drawing.Size(140, 86);
+            btnTatlilar7.TabIndex = 0;
+            btnTatlilar7.UseVisualStyleBackColor = true;
+            btnTatlilar7.Click += btnTatlilar7_Click;
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.Controls.Add(this.lvMenu);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Location = new System.Drawing.Point(341, 83);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(445, 217);
-            this.groupBox2.TabIndex = 2;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Menü";
+            groupBox2.BackColor = System.Drawing.Color.Transparent;
+            groupBox2.Controls.Add(lvMenu);
+            groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            groupBox2.ForeColor = System.Drawing.Color.White;
+            groupBox2.Location = new System.Drawing.Point(341, 83);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new System.Drawing.Size(445, 217);
+            groupBox2.TabIndex = 2;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Menü";
             // 
             // lvMenu
             // 
-            this.lvMenu.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3});
-            this.lvMenu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lvMenu.FullRowSelect = true;
-            this.lvMenu.GridLines = true;
-            this.lvMenu.HideSelection = false;
-            this.lvMenu.Location = new System.Drawing.Point(3, 22);
-            this.lvMenu.Name = "lvMenu";
-            this.lvMenu.Size = new System.Drawing.Size(439, 192);
-            this.lvMenu.TabIndex = 0;
-            this.lvMenu.UseCompatibleStateImageBehavior = false;
-            this.lvMenu.View = System.Windows.Forms.View.Details;
-            this.lvMenu.DoubleClick += new System.EventHandler(this.lvMenu_DoubleClick);
+            lvMenu.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3 });
+            lvMenu.Dock = System.Windows.Forms.DockStyle.Fill;
+            lvMenu.FullRowSelect = true;
+            lvMenu.GridLines = true;
+            lvMenu.Location = new System.Drawing.Point(3, 22);
+            lvMenu.Name = "lvMenu";
+            lvMenu.Size = new System.Drawing.Size(439, 192);
+            lvMenu.TabIndex = 0;
+            lvMenu.UseCompatibleStateImageBehavior = false;
+            lvMenu.View = System.Windows.Forms.View.Details;
+            lvMenu.DoubleClick += lvMenu_DoubleClick;
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Ürün Adı";
-            this.columnHeader1.Width = 300;
+            columnHeader1.Text = "Ürün Adı";
+            columnHeader1.Width = 300;
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Ürün Fiyatı";
-            this.columnHeader2.Width = 132;
+            columnHeader2.Text = "Ürün Fiyatı";
+            columnHeader2.Width = 132;
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Ürün No";
-            this.columnHeader3.Width = 1;
+            columnHeader3.Text = "Ürün No";
+            columnHeader3.Width = 1;
             // 
             // groupBox3
             // 
-            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox3.Controls.Add(this.lvSiparisler);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.groupBox3.ForeColor = System.Drawing.Color.White;
-            this.groupBox3.Location = new System.Drawing.Point(341, 306);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(442, 217);
-            this.groupBox3.TabIndex = 3;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Siparişler";
+            groupBox3.BackColor = System.Drawing.Color.Transparent;
+            groupBox3.Controls.Add(lvSiparisler);
+            groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            groupBox3.ForeColor = System.Drawing.Color.White;
+            groupBox3.Location = new System.Drawing.Point(341, 306);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Size = new System.Drawing.Size(442, 217);
+            groupBox3.TabIndex = 3;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "Siparişler";
             // 
             // lvSiparisler
             // 
-            this.lvSiparisler.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader4,
-            this.columnHeader5,
-            this.columnHeader7,
-            this.columnHeader6,
-            this.columnHeader8,
-            this.columnHeader9});
-            this.lvSiparisler.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lvSiparisler.FullRowSelect = true;
-            this.lvSiparisler.GridLines = true;
-            this.lvSiparisler.HideSelection = false;
-            this.lvSiparisler.Location = new System.Drawing.Point(3, 22);
-            this.lvSiparisler.Name = "lvSiparisler";
-            this.lvSiparisler.Size = new System.Drawing.Size(436, 192);
-            this.lvSiparisler.TabIndex = 0;
-            this.lvSiparisler.UseCompatibleStateImageBehavior = false;
-            this.lvSiparisler.View = System.Windows.Forms.View.Details;
-            this.lvSiparisler.DoubleClick += new System.EventHandler(this.lvSiparisler_DoubleClick);
+            lvSiparisler.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] { columnHeader4, columnHeader5, columnHeader7, columnHeader6, columnHeader8, columnHeader9 });
+            lvSiparisler.Dock = System.Windows.Forms.DockStyle.Fill;
+            lvSiparisler.FullRowSelect = true;
+            lvSiparisler.GridLines = true;
+            lvSiparisler.Location = new System.Drawing.Point(3, 22);
+            lvSiparisler.Name = "lvSiparisler";
+            lvSiparisler.Size = new System.Drawing.Size(436, 192);
+            lvSiparisler.TabIndex = 0;
+            lvSiparisler.UseCompatibleStateImageBehavior = false;
+            lvSiparisler.View = System.Windows.Forms.View.Details;
+            lvSiparisler.DoubleClick += lvSiparisler_DoubleClick;
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "Ürün Adı";
-            this.columnHeader4.Width = 100;
+            columnHeader4.Text = "Ürün Adı";
+            columnHeader4.Width = 100;
             // 
             // columnHeader5
             // 
-            this.columnHeader5.Text = "Ürün Adedi";
-            this.columnHeader5.Width = 100;
+            columnHeader5.Text = "Ürün Adedi";
+            columnHeader5.Width = 100;
             // 
             // columnHeader7
             // 
-            this.columnHeader7.Text = "Ürün Id";
+            columnHeader7.Text = "Ürün Id";
             // 
             // columnHeader6
             // 
-            this.columnHeader6.Text = "Ürün Fiyatı";
-            this.columnHeader6.Width = 20;
+            columnHeader6.Text = "Ürün Fiyatı";
+            columnHeader6.Width = 20;
             // 
             // columnHeader8
             // 
-            this.columnHeader8.Text = "Satış Id";
+            columnHeader8.Text = "Satış Id";
             // 
             // columnHeader9
             // 
-            this.columnHeader9.Text = "Silinen Id";
+            columnHeader9.Text = "Silinen Id";
             // 
             // txtAra
             // 
-            this.txtAra.Location = new System.Drawing.Point(224, 35);
-            this.txtAra.Multiline = true;
-            this.txtAra.Name = "txtAra";
-            this.txtAra.Size = new System.Drawing.Size(168, 42);
-            this.txtAra.TabIndex = 4;
-            this.txtAra.TextChanged += new System.EventHandler(this.txtAra_TextChanged);
+            txtAra.Location = new System.Drawing.Point(224, 35);
+            txtAra.Multiline = true;
+            txtAra.Name = "txtAra";
+            txtAra.Size = new System.Drawing.Size(168, 42);
+            txtAra.TabIndex = 4;
+            txtAra.TextChanged += txtAra_TextChanged;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(130, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 24);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Ürün No";
+            label1.AutoSize = true;
+            label1.BackColor = System.Drawing.Color.Transparent;
+            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            label1.Location = new System.Drawing.Point(130, 35);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(88, 24);
+            label1.TabIndex = 5;
+            label1.Text = "Ürün No";
             // 
             // btn7
             // 
-            this.btn7.BackColor = System.Drawing.Color.Yellow;
-            this.btn7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn7.Location = new System.Drawing.Point(792, 253);
-            this.btn7.Name = "btn7";
-            this.btn7.Size = new System.Drawing.Size(94, 55);
-            this.btn7.TabIndex = 6;
-            this.btn7.Text = "7";
-            this.btn7.UseVisualStyleBackColor = false;
+            btn7.BackColor = System.Drawing.Color.Yellow;
+            btn7.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            btn7.Location = new System.Drawing.Point(792, 253);
+            btn7.Name = "btn7";
+            btn7.Size = new System.Drawing.Size(94, 55);
+            btn7.TabIndex = 6;
+            btn7.Text = "7";
+            btn7.UseVisualStyleBackColor = false;
             // 
             // btn8
             // 
-            this.btn8.BackColor = System.Drawing.Color.Yellow;
-            this.btn8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn8.Location = new System.Drawing.Point(892, 253);
-            this.btn8.Name = "btn8";
-            this.btn8.Size = new System.Drawing.Size(94, 55);
-            this.btn8.TabIndex = 7;
-            this.btn8.Text = "8";
-            this.btn8.UseVisualStyleBackColor = false;
+            btn8.BackColor = System.Drawing.Color.Yellow;
+            btn8.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            btn8.Location = new System.Drawing.Point(892, 253);
+            btn8.Name = "btn8";
+            btn8.Size = new System.Drawing.Size(94, 55);
+            btn8.TabIndex = 7;
+            btn8.Text = "8";
+            btn8.UseVisualStyleBackColor = false;
             // 
             // btn9
             // 
-            this.btn9.BackColor = System.Drawing.Color.Yellow;
-            this.btn9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn9.Location = new System.Drawing.Point(992, 253);
-            this.btn9.Name = "btn9";
-            this.btn9.Size = new System.Drawing.Size(94, 55);
-            this.btn9.TabIndex = 8;
-            this.btn9.Text = "9";
-            this.btn9.UseVisualStyleBackColor = false;
+            btn9.BackColor = System.Drawing.Color.Yellow;
+            btn9.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            btn9.Location = new System.Drawing.Point(992, 253);
+            btn9.Name = "btn9";
+            btn9.Size = new System.Drawing.Size(94, 55);
+            btn9.TabIndex = 8;
+            btn9.Text = "9";
+            btn9.UseVisualStyleBackColor = false;
             // 
             // btn4
             // 
-            this.btn4.BackColor = System.Drawing.Color.Yellow;
-            this.btn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn4.Location = new System.Drawing.Point(792, 192);
-            this.btn4.Name = "btn4";
-            this.btn4.Size = new System.Drawing.Size(94, 55);
-            this.btn4.TabIndex = 6;
-            this.btn4.Text = "4";
-            this.btn4.UseVisualStyleBackColor = false;
+            btn4.BackColor = System.Drawing.Color.Yellow;
+            btn4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            btn4.Location = new System.Drawing.Point(792, 192);
+            btn4.Name = "btn4";
+            btn4.Size = new System.Drawing.Size(94, 55);
+            btn4.TabIndex = 6;
+            btn4.Text = "4";
+            btn4.UseVisualStyleBackColor = false;
             // 
             // btn5
             // 
-            this.btn5.BackColor = System.Drawing.Color.Yellow;
-            this.btn5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn5.Location = new System.Drawing.Point(892, 192);
-            this.btn5.Name = "btn5";
-            this.btn5.Size = new System.Drawing.Size(94, 55);
-            this.btn5.TabIndex = 7;
-            this.btn5.Text = "5";
-            this.btn5.UseVisualStyleBackColor = false;
+            btn5.BackColor = System.Drawing.Color.Yellow;
+            btn5.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            btn5.Location = new System.Drawing.Point(892, 192);
+            btn5.Name = "btn5";
+            btn5.Size = new System.Drawing.Size(94, 55);
+            btn5.TabIndex = 7;
+            btn5.Text = "5";
+            btn5.UseVisualStyleBackColor = false;
             // 
             // btn6
             // 
-            this.btn6.BackColor = System.Drawing.Color.Yellow;
-            this.btn6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn6.Location = new System.Drawing.Point(992, 192);
-            this.btn6.Name = "btn6";
-            this.btn6.Size = new System.Drawing.Size(94, 55);
-            this.btn6.TabIndex = 8;
-            this.btn6.Text = "6";
-            this.btn6.UseVisualStyleBackColor = false;
+            btn6.BackColor = System.Drawing.Color.Yellow;
+            btn6.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            btn6.Location = new System.Drawing.Point(992, 192);
+            btn6.Name = "btn6";
+            btn6.Size = new System.Drawing.Size(94, 55);
+            btn6.TabIndex = 8;
+            btn6.Text = "6";
+            btn6.UseVisualStyleBackColor = false;
             // 
             // btn3
             // 
-            this.btn3.BackColor = System.Drawing.Color.Yellow;
-            this.btn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn3.Location = new System.Drawing.Point(992, 131);
-            this.btn3.Name = "btn3";
-            this.btn3.Size = new System.Drawing.Size(94, 55);
-            this.btn3.TabIndex = 11;
-            this.btn3.Text = "3";
-            this.btn3.UseVisualStyleBackColor = false;
+            btn3.BackColor = System.Drawing.Color.Yellow;
+            btn3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            btn3.Location = new System.Drawing.Point(992, 131);
+            btn3.Name = "btn3";
+            btn3.Size = new System.Drawing.Size(94, 55);
+            btn3.TabIndex = 11;
+            btn3.Text = "3";
+            btn3.UseVisualStyleBackColor = false;
             // 
             // btn2
             // 
-            this.btn2.BackColor = System.Drawing.Color.Yellow;
-            this.btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn2.Location = new System.Drawing.Point(892, 131);
-            this.btn2.Name = "btn2";
-            this.btn2.Size = new System.Drawing.Size(94, 55);
-            this.btn2.TabIndex = 10;
-            this.btn2.Text = "2";
-            this.btn2.UseVisualStyleBackColor = false;
+            btn2.BackColor = System.Drawing.Color.Yellow;
+            btn2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            btn2.Location = new System.Drawing.Point(892, 131);
+            btn2.Name = "btn2";
+            btn2.Size = new System.Drawing.Size(94, 55);
+            btn2.TabIndex = 10;
+            btn2.Text = "2";
+            btn2.UseVisualStyleBackColor = false;
             // 
             // btn1
             // 
-            this.btn1.BackColor = System.Drawing.Color.Yellow;
-            this.btn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn1.Location = new System.Drawing.Point(792, 131);
-            this.btn1.Name = "btn1";
-            this.btn1.Size = new System.Drawing.Size(94, 55);
-            this.btn1.TabIndex = 9;
-            this.btn1.Text = "1";
-            this.btn1.UseVisualStyleBackColor = false;
+            btn1.BackColor = System.Drawing.Color.Yellow;
+            btn1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            btn1.Location = new System.Drawing.Point(792, 131);
+            btn1.Name = "btn1";
+            btn1.Size = new System.Drawing.Size(94, 55);
+            btn1.TabIndex = 9;
+            btn1.Text = "1";
+            btn1.UseVisualStyleBackColor = false;
             // 
             // btnTemizle
             // 
-            this.btnTemizle.BackColor = System.Drawing.Color.Yellow;
-            this.btnTemizle.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnTemizle.Location = new System.Drawing.Point(792, 314);
-            this.btnTemizle.Name = "btnTemizle";
-            this.btnTemizle.Size = new System.Drawing.Size(194, 55);
-            this.btnTemizle.TabIndex = 6;
-            this.btnTemizle.Text = "C";
-            this.btnTemizle.UseVisualStyleBackColor = false;
+            btnTemizle.BackColor = System.Drawing.Color.Yellow;
+            btnTemizle.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            btnTemizle.Location = new System.Drawing.Point(792, 314);
+            btnTemizle.Name = "btnTemizle";
+            btnTemizle.Size = new System.Drawing.Size(194, 55);
+            btnTemizle.TabIndex = 6;
+            btnTemizle.Text = "C";
+            btnTemizle.UseVisualStyleBackColor = false;
             // 
             // btn0
             // 
-            this.btn0.BackColor = System.Drawing.Color.Yellow;
-            this.btn0.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btn0.Location = new System.Drawing.Point(992, 314);
-            this.btn0.Name = "btn0";
-            this.btn0.Size = new System.Drawing.Size(94, 55);
-            this.btn0.TabIndex = 8;
-            this.btn0.Text = "0";
-            this.btn0.UseVisualStyleBackColor = false;
+            btn0.BackColor = System.Drawing.Color.Yellow;
+            btn0.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            btn0.Location = new System.Drawing.Point(992, 314);
+            btn0.Name = "btn0";
+            btn0.Size = new System.Drawing.Size(94, 55);
+            btn0.TabIndex = 8;
+            btn0.Text = "0";
+            btn0.UseVisualStyleBackColor = false;
             // 
             // txtAdet
             // 
-            this.txtAdet.Location = new System.Drawing.Point(792, 83);
-            this.txtAdet.Multiline = true;
-            this.txtAdet.Name = "txtAdet";
-            this.txtAdet.Size = new System.Drawing.Size(294, 42);
-            this.txtAdet.TabIndex = 4;
+            txtAdet.Location = new System.Drawing.Point(792, 83);
+            txtAdet.Multiline = true;
+            txtAdet.Name = "txtAdet";
+            txtAdet.Size = new System.Drawing.Size(294, 42);
+            txtAdet.TabIndex = 4;
             // 
             // btnCikis
             // 
-            this.btnCikis.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCikis.BackgroundImage")));
-            this.btnCikis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCikis.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnCikis.Location = new System.Drawing.Point(116, 545);
-            this.btnCikis.Name = "btnCikis";
-            this.btnCikis.Size = new System.Drawing.Size(82, 71);
-            this.btnCikis.TabIndex = 12;
-            this.btnCikis.UseVisualStyleBackColor = true;
-            this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
+            btnCikis.BackgroundImage = (System.Drawing.Image)resources.GetObject("btnCikis.BackgroundImage");
+            btnCikis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            btnCikis.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            btnCikis.Location = new System.Drawing.Point(116, 545);
+            btnCikis.Name = "btnCikis";
+            btnCikis.Size = new System.Drawing.Size(82, 71);
+            btnCikis.TabIndex = 12;
+            btnCikis.UseVisualStyleBackColor = true;
+            btnCikis.Click += btnCikis_Click;
             // 
             // btnGeriDon
             // 
-            this.btnGeriDon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGeriDon.BackgroundImage")));
-            this.btnGeriDon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnGeriDon.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnGeriDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnGeriDon.Location = new System.Drawing.Point(28, 545);
-            this.btnGeriDon.Name = "btnGeriDon";
-            this.btnGeriDon.Size = new System.Drawing.Size(82, 71);
-            this.btnGeriDon.TabIndex = 13;
-            this.btnGeriDon.UseVisualStyleBackColor = true;
-            this.btnGeriDon.Click += new System.EventHandler(this.btnGeriDon_Click);
+            btnGeriDon.BackgroundImage = (System.Drawing.Image)resources.GetObject("btnGeriDon.BackgroundImage");
+            btnGeriDon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            btnGeriDon.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnGeriDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            btnGeriDon.Location = new System.Drawing.Point(28, 545);
+            btnGeriDon.Name = "btnGeriDon";
+            btnGeriDon.Size = new System.Drawing.Size(82, 71);
+            btnGeriDon.TabIndex = 13;
+            btnGeriDon.UseVisualStyleBackColor = true;
+            btnGeriDon.Click += btnGeriDon_Click;
             // 
             // btnOdeme
             // 
-            this.btnOdeme.BackgroundImage = global::Restaurant.Properties.Resources.odeme;
-            this.btnOdeme.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnOdeme.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnOdeme.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnOdeme.Location = new System.Drawing.Point(792, 375);
-            this.btnOdeme.Name = "btnOdeme";
-            this.btnOdeme.Size = new System.Drawing.Size(140, 86);
-            this.btnOdeme.TabIndex = 1;
-            this.btnOdeme.UseVisualStyleBackColor = true;
-            this.btnOdeme.Click += new System.EventHandler(this.btnOdeme_Click);
+            btnOdeme.BackgroundImage = Properties.Resources.odeme;
+            btnOdeme.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            btnOdeme.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnOdeme.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnOdeme.Location = new System.Drawing.Point(792, 375);
+            btnOdeme.Name = "btnOdeme";
+            btnOdeme.Size = new System.Drawing.Size(140, 86);
+            btnOdeme.TabIndex = 1;
+            btnOdeme.UseVisualStyleBackColor = true;
+            btnOdeme.Click += btnOdeme_Click;
             // 
             // btnSiparis
             // 
-            this.btnSiparis.BackgroundImage = global::Restaurant.Properties.Resources.siparis;
-            this.btnSiparis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSiparis.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSiparis.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSiparis.Location = new System.Drawing.Point(938, 375);
-            this.btnSiparis.Name = "btnSiparis";
-            this.btnSiparis.Size = new System.Drawing.Size(148, 86);
-            this.btnSiparis.TabIndex = 14;
-            this.btnSiparis.UseVisualStyleBackColor = true;
-            this.btnSiparis.Click += new System.EventHandler(this.btnSiparis_Click);
+            btnSiparis.BackgroundImage = Properties.Resources.siparis;
+            btnSiparis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            btnSiparis.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnSiparis.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnSiparis.Location = new System.Drawing.Point(938, 375);
+            btnSiparis.Name = "btnSiparis";
+            btnSiparis.Size = new System.Drawing.Size(148, 86);
+            btnSiparis.TabIndex = 14;
+            btnSiparis.UseVisualStyleBackColor = true;
+            btnSiparis.Click += btnSiparis_Click;
             // 
             // btnIptal
             // 
-            this.btnIptal.BackgroundImage = global::Restaurant.Properties.Resources.iptal;
-            this.btnIptal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnIptal.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnIptal.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnIptal.Location = new System.Drawing.Point(873, 467);
-            this.btnIptal.Name = "btnIptal";
-            this.btnIptal.Size = new System.Drawing.Size(140, 86);
-            this.btnIptal.TabIndex = 15;
-            this.btnIptal.UseVisualStyleBackColor = true;
+            btnIptal.BackgroundImage = Properties.Resources.iptal;
+            btnIptal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            btnIptal.Cursor = System.Windows.Forms.Cursors.Hand;
+            btnIptal.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnIptal.Location = new System.Drawing.Point(873, 467);
+            btnIptal.Name = "btnIptal";
+            btnIptal.Size = new System.Drawing.Size(140, 86);
+            btnIptal.TabIndex = 15;
+            btnIptal.UseVisualStyleBackColor = true;
             // 
             // lvYeniEklenenler
             // 
-            this.lvYeniEklenenler.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader10,
-            this.columnHeader11,
-            this.columnHeader12,
-            this.columnHeader13,
-            this.columnHeader14});
-            this.lvYeniEklenenler.HideSelection = false;
-            this.lvYeniEklenenler.Location = new System.Drawing.Point(240, 589);
-            this.lvYeniEklenenler.Name = "lvYeniEklenenler";
-            this.lvYeniEklenenler.Size = new System.Drawing.Size(332, 97);
-            this.lvYeniEklenenler.TabIndex = 16;
-            this.lvYeniEklenenler.UseCompatibleStateImageBehavior = false;
-            this.lvYeniEklenenler.View = System.Windows.Forms.View.Details;
+            lvYeniEklenenler.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] { columnHeader10, columnHeader11, columnHeader12, columnHeader13, columnHeader14 });
+            lvYeniEklenenler.Location = new System.Drawing.Point(240, 589);
+            lvYeniEklenenler.Name = "lvYeniEklenenler";
+            lvYeniEklenenler.Size = new System.Drawing.Size(332, 97);
+            lvYeniEklenenler.TabIndex = 16;
+            lvYeniEklenenler.UseCompatibleStateImageBehavior = false;
+            lvYeniEklenenler.View = System.Windows.Forms.View.Details;
+            lvYeniEklenenler.Visible = false;
             // 
             // columnHeader10
             // 
-            this.columnHeader10.Text = "AdisyonId";
+            columnHeader10.Text = "AdisyonId";
             // 
             // columnHeader11
             // 
-            this.columnHeader11.Text = "UrunId";
+            columnHeader11.Text = "UrunId";
             // 
             // columnHeader12
             // 
-            this.columnHeader12.Text = "Adet";
+            columnHeader12.Text = "Adet";
             // 
             // columnHeader13
             // 
-            this.columnHeader13.Text = "MasaId";
+            columnHeader13.Text = "MasaId";
             // 
             // columnHeader14
             // 
-            this.columnHeader14.Text = "SilinenId";
+            columnHeader14.Text = "SilinenId";
             // 
             // frmSiparis
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Restaurant.Properties.Resources.arkaplan;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1098, 728);
-            this.Controls.Add(this.lvYeniEklenenler);
-            this.Controls.Add(this.btnIptal);
-            this.Controls.Add(this.btnSiparis);
-            this.Controls.Add(this.btnOdeme);
-            this.Controls.Add(this.btnCikis);
-            this.Controls.Add(this.btnGeriDon);
-            this.Controls.Add(this.btn3);
-            this.Controls.Add(this.btn2);
-            this.Controls.Add(this.btn1);
-            this.Controls.Add(this.btn6);
-            this.Controls.Add(this.btn0);
-            this.Controls.Add(this.btn9);
-            this.Controls.Add(this.btn5);
-            this.Controls.Add(this.btn8);
-            this.Controls.Add(this.btn4);
-            this.Controls.Add(this.btnTemizle);
-            this.Controls.Add(this.btn7);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtAdet);
-            this.Controls.Add(this.txtAra);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.lblMasaNo);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "frmSiparis";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmSiparis";
-            this.Load += new System.EventHandler(this.frmSiparis_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.arkaplan;
+            BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            ClientSize = new System.Drawing.Size(1098, 728);
+            Controls.Add(lvYeniEklenenler);
+            Controls.Add(btnIptal);
+            Controls.Add(btnSiparis);
+            Controls.Add(btnOdeme);
+            Controls.Add(btnCikis);
+            Controls.Add(btnGeriDon);
+            Controls.Add(btn3);
+            Controls.Add(btn2);
+            Controls.Add(btn1);
+            Controls.Add(btn6);
+            Controls.Add(btn0);
+            Controls.Add(btn9);
+            Controls.Add(btn5);
+            Controls.Add(btn8);
+            Controls.Add(btn4);
+            Controls.Add(btnTemizle);
+            Controls.Add(btn7);
+            Controls.Add(label1);
+            Controls.Add(txtAdet);
+            Controls.Add(txtAra);
+            Controls.Add(groupBox3);
+            Controls.Add(groupBox2);
+            Controls.Add(groupBox1);
+            Controls.Add(lblMasaNo);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            Name = "frmSiparis";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            Text = "frmSiparis";
+            WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            Load += frmSiparis_Load;
+            groupBox1.ResumeLayout(false);
+            groupBox2.ResumeLayout(false);
+            groupBox3.ResumeLayout(false);
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

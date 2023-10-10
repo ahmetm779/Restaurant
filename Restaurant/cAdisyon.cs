@@ -191,7 +191,6 @@ namespace Restaurant
 
             return sonuc;
         }
-
         public void MusteriDetaylari(ListView lv, int musteriId)
         {
             lv.Items.Clear();
@@ -223,6 +222,37 @@ namespace Restaurant
             }
             con.Dispose();
             con.Close();
+        }
+
+        public int RezervasyonAdisyonAc(cAdisyon Bilgiler)
+        {
+            int sonuc = 0;
+            SqlConnection con = new SqlConnection(gnl.conString);
+            SqlCommand cmd = new SqlCommand("insert into Adisyonlar(ServisTurNo,PersonelId,MasaId,Tarih) " +
+                "values(@ServisTurNo,@PersonelId,@MasaId,@Tarih);select scope_IDENTITY()", con);
+
+            try
+            {
+                if (con.State == ConnectionState.Closed)
+                {
+                    con.Open();
+                }
+                cmd.Parameters.Add("@ServisTurNo", SqlDbType.Int).Value = Bilgiler.ServisTurNo;
+                cmd.Parameters.Add("@PersonelId", SqlDbType.Int).Value = Bilgiler.PersonelId;
+                cmd.Parameters.Add("@MasaId", SqlDbType.Int).Value = Bilgiler.MasaId;
+                cmd.Parameters.Add("@Tarih", SqlDbType.DateTime).Value = Bilgiler.Tarih;
+                sonuc = Convert.ToInt32(cmd.ExecuteScalar());
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                con.Dispose();
+                con.Close();
+            }
+            return sonuc;
         }
     }
 }

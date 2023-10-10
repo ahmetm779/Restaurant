@@ -127,9 +127,6 @@
   <data name="ayarlaryazili" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\ayarlaryazili.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="odeme" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\odeme.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="arkaplan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\arkaplan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -142,11 +139,17 @@
   <data name="rezerve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\rezerve.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="zraporu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\zraporu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="kasaislemleri" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\kasaislemleri.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="rezervasyon" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\rezervasyon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tumurunler" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\tumurunler.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="yeni" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\yeni.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,8 +169,8 @@
   <data name="cikis" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\cikis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hesapozeti" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\hesapozeti.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="rezervasyonlar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\rezervasyonlar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cikisyazili" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\cikisyazili.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -193,14 +196,23 @@
   <data name="masalar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\masalar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="odeme" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\odeme.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icecekler" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\icecekler.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hesapozeti" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\hesapozeti.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tatlilar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\tatlilar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="arasicaklar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\arasicaklar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rezervasyonac" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\rezervasyonac.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="iptal" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\iptal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -247,7 +259,7 @@
   <data name="sil" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\sil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="zraporu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\zraporu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="geridonyazili" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\geridonyazili.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

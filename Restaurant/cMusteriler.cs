@@ -298,5 +298,40 @@ namespace Restaurant
             con.Dispose();
             con.Close();
         }
+        public void MusteriGetirAdres(ListView lv, string musteriAdres)
+        {
+            lv.Items.Clear();
+            SqlConnection con = new SqlConnection(gnl.conString);
+            SqlCommand cmd = new SqlCommand("select * from Musteriler where Adres like @musteriAdres + '%'", con);
+            SqlDataReader dr = null;
+
+            cmd.Parameters.Add("@musteriAdres", SqlDbType.VarChar).Value = musteriAdres;
+            try
+            {
+                if (con.State == ConnectionState.Closed)
+                {
+                    con.Open();
+                }
+                dr = cmd.ExecuteReader();
+                int sayac = 0;
+                while (dr.Read())
+                {
+                    lv.Items.Add(Convert.ToInt32(dr["ID"]).ToString());
+                    lv.Items[sayac].SubItems.Add(dr["Ad"].ToString());
+                    lv.Items[sayac].SubItems.Add(dr["Soyad"].ToString());
+                    lv.Items[sayac].SubItems.Add(dr["Telefon"].ToString());
+                    lv.Items[sayac].SubItems.Add(dr["Adres"].ToString());
+                    lv.Items[sayac].SubItems.Add(dr["Email"].ToString());
+                    sayac++;
+                }
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            dr.Close();
+            con.Dispose();
+            con.Close();
+        }
     }
 }

@@ -4,6 +4,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Text;
 using System.Windows.Forms;
+using static System.Windows.Forms.AxHost;
 
 namespace Restaurant
 {
@@ -15,6 +16,7 @@ namespace Restaurant
         private int _ServisTuru;
         private int _Durum;
         private int _Onay;
+        private string _MasaBilgi;
         #endregion
 
         #region Properties
@@ -23,6 +25,7 @@ namespace Restaurant
         public int ServisTuru { get => _ServisTuru; set => _ServisTuru = value; }
         public int Durum { get => _Durum; set => _Durum = value; }
         public int Onay { get => _Onay; set => _Onay = value; }
+        public string MasaBilgi { get => _MasaBilgi; set => _MasaBilgi = value; }
         #endregion
 
         cGenel gnl = new cGenel();
@@ -60,7 +63,6 @@ namespace Restaurant
             }
             return dt;
         }
-
         public int TableGetByNumber(string TableValue)
         {
             string aa = TableValue;
@@ -76,7 +78,6 @@ namespace Restaurant
             }
             return Convert.ToInt32(masaNo);
         }
-
         public bool TableGetByState(int ButtonName, int state)
         {
             bool result = false;
@@ -103,7 +104,6 @@ namespace Restaurant
             }
             return result;
         }
-
         public void SetChangeTableState(string ButonName, int state)
         {
             SqlConnection con = new SqlConnection(gnl.conString);
@@ -131,6 +131,39 @@ namespace Restaurant
             cmd.ExecuteNonQuery();
             con.Dispose();
             con.Close();
+        }
+        public void MasaKapasitesiveDurumuGetir(ComboBox cb)
+        {
+            cb.Items.Clear();
+            string durum = "";
+            SqlConnection con = new SqlConnection(gnl.conString);
+            SqlCommand cmd = new SqlCommand("select * from Masalar", con);
+
+            if (con.State == ConnectionState.Closed)
+            {
+                con.Open();
+            }
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                cMasalar cMasalar = new cMasalar();
+                if (cMasalar._Durum == 2)
+                    durum = "DOLU";
+                else if (cMasalar._Durum == 3)
+                    durum = "REZERVE";
+                cMasalar._Kapasite = Convert.ToInt32(dr["Kapasite"]);
+                cMasalar._MasaBilgi = "Masa No: " + dr["ID"].ToString() + " Kapasitesi: " + dr["Kapasite"].ToString();
+                cMasalar._Id = Convert.ToInt32(dr["ID"]);
+                cb.Items.Add(cMasalar);
+            }
+
+            dr.Close();
+            con.Dispose();
+            con.Close();
+        }
+        public override string ToString()
+        {
+            return MasaBilgi;
         }
     }
 }

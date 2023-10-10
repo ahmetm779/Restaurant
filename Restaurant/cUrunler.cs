@@ -242,7 +242,7 @@ namespace Restaurant
                                             "dbo.Kategoriler.ID = dbo.Urunler.KategoriId inner join dbo.Satislar on" +
                                             "dbo.Urunler.ID = dbo.Satislar.UrunId inner join dbo.Adisyonlar on" +
                                             "dbo.Satislar.AdisyonId = dbo.Adisyonlar.ID where" +
-                                            "(convert(datetime, Tarih, 104) between convert(datetime, '01.01.2013', 104) and convert(datetime, '01.01.2015', 104))" +
+                                            "(convert(datetime, Tarih, 104) between convert(datetime, @Baslangic, 104) and convert(datetime, @Bitis, 104))" +
                                             "group by dbo.Urunler.UrunAd order by Adeti desc", con);
             SqlDataReader dr = null;
             cmd.Parameters.Add("@Baslangic", SqlDbType.VarChar).Value = Baslangic.Value.ToShortDateString();
@@ -257,7 +257,7 @@ namespace Restaurant
                 int sayac = 0;
                 while (dr.Read())
                 {
-                    lv.Items[sayac].SubItems.Add(dr["UrunAd"].ToString());
+                    lv.Items.Add(dr["UrunAd"].ToString());
                     lv.Items[sayac].SubItems.Add(dr["Adeti"].ToString());
                     sayac++;
                 }
@@ -282,7 +282,7 @@ namespace Restaurant
                                             "dbo.Kategoriler.ID = dbo.Urunler.KategoriId inner join dbo.Satislar on " +
                                             "dbo.Urunler.ID = dbo.Satislar.UrunId inner join dbo.Adisyonlar on " +
                                             "dbo.Satislar.AdisyonId = dbo.Adisyonlar.ID where " +
-                                            "(convert(datetime, Tarih, 104) between convert(datetime, '01.01.2013', 104) and convert(datetime, '01.01.2015', 104)) " +
+                                            "(convert(datetime, Tarih, 104) between convert(datetime, @Baslangic, 104) and convert(datetime, @Bitis, 104)) " +
                                             "and (dbo.Urunler.KategoriId=@UrunKatId) group by dbo.Urunler.UrunAd order by Adeti desc", con);
             SqlDataReader dr = null;
             cmd.Parameters.Add("@Baslangic", SqlDbType.VarChar).Value = Baslangic.Value.ToShortDateString();
@@ -298,7 +298,7 @@ namespace Restaurant
                 int sayac = 0;
                 while (dr.Read())
                 {
-                    lv.Items[sayac].SubItems.Add(dr["UrunAd"].ToString());
+                    lv.Items.Add(dr["UrunAd"].ToString());
                     lv.Items[sayac].SubItems.Add(dr["Adeti"].ToString());
                     sayac++;
                 }

@@ -30,505 +30,493 @@ namespace Restaurant
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAyarlar));
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.cbPersonel = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtPersonelId = new System.Windows.Forms.TextBox();
-            this.txtYeniSifreTekrar = new System.Windows.Forms.TextBox();
-            this.txtYeniSifre = new System.Windows.Forms.TextBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnBilgiDegistir = new System.Windows.Forms.Button();
-            this.btnSil = new System.Windows.Forms.Button();
-            this.btnEkle = new System.Windows.Forms.Button();
-            this.btnYeni = new System.Windows.Forms.Button();
-            this.txtGorevId2 = new System.Windows.Forms.TextBox();
-            this.cbGorevi = new System.Windows.Forms.ComboBox();
-            this.txtSifreTekrar = new System.Windows.Forms.TextBox();
-            this.txtSifre = new System.Windows.Forms.TextBox();
-            this.txtSoyad = new System.Windows.Forms.TextBox();
-            this.txtPersonelD = new System.Windows.Forms.TextBox();
-            this.txtAd = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.lblBilgi = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.lvPersoneller = new System.Windows.Forms.ListView();
-            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader2 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader3 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader4 = new System.Windows.Forms.ColumnHeader();
-            this.columnHeader5 = new System.Windows.Forms.ColumnHeader();
-            this.btnCikis = new System.Windows.Forms.Button();
-            this.btnGeriDon = new System.Windows.Forms.Button();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.SuspendLayout();
+            groupBox1 = new System.Windows.Forms.GroupBox();
+            button1 = new System.Windows.Forms.Button();
+            cbPersonel = new System.Windows.Forms.ComboBox();
+            label2 = new System.Windows.Forms.Label();
+            label1 = new System.Windows.Forms.Label();
+            txtPersonelId = new System.Windows.Forms.TextBox();
+            txtYeniSifreTekrar = new System.Windows.Forms.TextBox();
+            txtYeniSifre = new System.Windows.Forms.TextBox();
+            groupBox2 = new System.Windows.Forms.GroupBox();
+            btnBilgiDegistir = new System.Windows.Forms.Button();
+            btnSil = new System.Windows.Forms.Button();
+            btnEkle = new System.Windows.Forms.Button();
+            btnYeni = new System.Windows.Forms.Button();
+            txtGorevId2 = new System.Windows.Forms.TextBox();
+            cbGorevi = new System.Windows.Forms.ComboBox();
+            txtSifreTekrar = new System.Windows.Forms.TextBox();
+            txtSifre = new System.Windows.Forms.TextBox();
+            txtSoyad = new System.Windows.Forms.TextBox();
+            txtPersonelD = new System.Windows.Forms.TextBox();
+            txtAd = new System.Windows.Forms.TextBox();
+            label8 = new System.Windows.Forms.Label();
+            label7 = new System.Windows.Forms.Label();
+            label6 = new System.Windows.Forms.Label();
+            label5 = new System.Windows.Forms.Label();
+            label4 = new System.Windows.Forms.Label();
+            lblBilgi = new System.Windows.Forms.Label();
+            groupBox3 = new System.Windows.Forms.GroupBox();
+            button6 = new System.Windows.Forms.Button();
+            label9 = new System.Windows.Forms.Label();
+            label10 = new System.Windows.Forms.Label();
+            textBox8 = new System.Windows.Forms.TextBox();
+            textBox9 = new System.Windows.Forms.TextBox();
+            lvPersoneller = new System.Windows.Forms.ListView();
+            columnHeader1 = new System.Windows.Forms.ColumnHeader();
+            columnHeader2 = new System.Windows.Forms.ColumnHeader();
+            columnHeader3 = new System.Windows.Forms.ColumnHeader();
+            columnHeader4 = new System.Windows.Forms.ColumnHeader();
+            columnHeader5 = new System.Windows.Forms.ColumnHeader();
+            btnCikis = new System.Windows.Forms.Button();
+            btnGeriDon = new System.Windows.Forms.Button();
+            groupBox4 = new System.Windows.Forms.GroupBox();
+            groupBox1.SuspendLayout();
+            groupBox2.SuspendLayout();
+            groupBox3.SuspendLayout();
+            groupBox4.SuspendLayout();
+            SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.button1);
-            this.groupBox1.Controls.Add(this.cbPersonel);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.txtPersonelId);
-            this.groupBox1.Controls.Add(this.txtYeniSifreTekrar);
-            this.groupBox1.Controls.Add(this.txtYeniSifre);
-            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.ForeColor = System.Drawing.Color.Black;
-            this.groupBox1.Location = new System.Drawing.Point(108, 154);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(484, 281);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
+            groupBox1.BackColor = System.Drawing.Color.Transparent;
+            groupBox1.Controls.Add(button1);
+            groupBox1.Controls.Add(cbPersonel);
+            groupBox1.Controls.Add(label2);
+            groupBox1.Controls.Add(label1);
+            groupBox1.Controls.Add(txtPersonelId);
+            groupBox1.Controls.Add(txtYeniSifreTekrar);
+            groupBox1.Controls.Add(txtYeniSifre);
+            groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            groupBox1.ForeColor = System.Drawing.Color.Black;
+            groupBox1.Location = new System.Drawing.Point(108, 154);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new System.Drawing.Size(484, 281);
+            groupBox1.TabIndex = 0;
+            groupBox1.TabStop = false;
             // 
             // button1
             // 
-            this.button1.BackgroundImage = global::Restaurant.Properties.Resources.degistir;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button1.Location = new System.Drawing.Point(175, 175);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(223, 100);
-            this.button1.TabIndex = 3;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            button1.BackgroundImage = Properties.Resources.degistir;
+            button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            button1.Location = new System.Drawing.Point(175, 175);
+            button1.Name = "button1";
+            button1.Size = new System.Drawing.Size(223, 100);
+            button1.TabIndex = 3;
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // cbPersonel
             // 
-            this.cbPersonel.FormattingEnabled = true;
-            this.cbPersonel.Location = new System.Drawing.Point(254, 38);
-            this.cbPersonel.Name = "cbPersonel";
-            this.cbPersonel.Size = new System.Drawing.Size(166, 37);
-            this.cbPersonel.TabIndex = 2;
-            this.cbPersonel.SelectedIndexChanged += new System.EventHandler(this.cbPersonel_SelectedIndexChanged);
+            cbPersonel.FormattingEnabled = true;
+            cbPersonel.Location = new System.Drawing.Point(254, 38);
+            cbPersonel.Name = "cbPersonel";
+            cbPersonel.Size = new System.Drawing.Size(166, 37);
+            cbPersonel.TabIndex = 2;
+            cbPersonel.SelectedIndexChanged += cbPersonel_SelectedIndexChanged;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(53, 125);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(162, 29);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "T Şifre Tekrar";
+            label2.AutoSize = true;
+            label2.ForeColor = System.Drawing.Color.White;
+            label2.Location = new System.Drawing.Point(53, 125);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(162, 29);
+            label2.TabIndex = 1;
+            label2.Text = "T Şifre Tekrar";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(52, 84);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 29);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Yeni Şifre";
+            label1.AutoSize = true;
+            label1.ForeColor = System.Drawing.Color.White;
+            label1.Location = new System.Drawing.Point(52, 84);
+            label1.Name = "label1";
+            label1.Size = new System.Drawing.Size(118, 29);
+            label1.TabIndex = 1;
+            label1.Text = "Yeni Şifre";
             // 
             // txtPersonelId
             // 
-            this.txtPersonelId.Location = new System.Drawing.Point(426, 40);
-            this.txtPersonelId.Name = "txtPersonelId";
-            this.txtPersonelId.Size = new System.Drawing.Size(16, 35);
-            this.txtPersonelId.TabIndex = 0;
-            this.txtPersonelId.Visible = false;
+            txtPersonelId.Location = new System.Drawing.Point(426, 40);
+            txtPersonelId.Name = "txtPersonelId";
+            txtPersonelId.Size = new System.Drawing.Size(16, 35);
+            txtPersonelId.TabIndex = 0;
+            txtPersonelId.Visible = false;
             // 
             // txtYeniSifreTekrar
             // 
-            this.txtYeniSifreTekrar.Location = new System.Drawing.Point(254, 122);
-            this.txtYeniSifreTekrar.Name = "txtYeniSifreTekrar";
-            this.txtYeniSifreTekrar.Size = new System.Drawing.Size(166, 35);
-            this.txtYeniSifreTekrar.TabIndex = 0;
+            txtYeniSifreTekrar.Location = new System.Drawing.Point(254, 122);
+            txtYeniSifreTekrar.Name = "txtYeniSifreTekrar";
+            txtYeniSifreTekrar.Size = new System.Drawing.Size(166, 35);
+            txtYeniSifreTekrar.TabIndex = 0;
             // 
             // txtYeniSifre
             // 
-            this.txtYeniSifre.Location = new System.Drawing.Point(254, 81);
-            this.txtYeniSifre.Name = "txtYeniSifre";
-            this.txtYeniSifre.Size = new System.Drawing.Size(166, 35);
-            this.txtYeniSifre.TabIndex = 0;
+            txtYeniSifre.Location = new System.Drawing.Point(254, 81);
+            txtYeniSifre.Name = "txtYeniSifre";
+            txtYeniSifre.Size = new System.Drawing.Size(166, 35);
+            txtYeniSifre.TabIndex = 0;
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.Controls.Add(this.btnBilgiDegistir);
-            this.groupBox2.Controls.Add(this.btnSil);
-            this.groupBox2.Controls.Add(this.btnEkle);
-            this.groupBox2.Controls.Add(this.btnYeni);
-            this.groupBox2.Controls.Add(this.txtGorevId2);
-            this.groupBox2.Controls.Add(this.cbGorevi);
-            this.groupBox2.Controls.Add(this.txtSifreTekrar);
-            this.groupBox2.Controls.Add(this.txtSifre);
-            this.groupBox2.Controls.Add(this.txtSoyad);
-            this.groupBox2.Controls.Add(this.txtPersonelD);
-            this.groupBox2.Controls.Add(this.txtAd);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox2.ForeColor = System.Drawing.Color.Black;
-            this.groupBox2.Location = new System.Drawing.Point(624, 154);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(419, 477);
-            this.groupBox2.TabIndex = 0;
-            this.groupBox2.TabStop = false;
+            groupBox2.BackColor = System.Drawing.Color.Transparent;
+            groupBox2.Controls.Add(btnBilgiDegistir);
+            groupBox2.Controls.Add(btnSil);
+            groupBox2.Controls.Add(btnEkle);
+            groupBox2.Controls.Add(btnYeni);
+            groupBox2.Controls.Add(txtGorevId2);
+            groupBox2.Controls.Add(cbGorevi);
+            groupBox2.Controls.Add(txtSifreTekrar);
+            groupBox2.Controls.Add(txtSifre);
+            groupBox2.Controls.Add(txtSoyad);
+            groupBox2.Controls.Add(txtPersonelD);
+            groupBox2.Controls.Add(txtAd);
+            groupBox2.Controls.Add(label8);
+            groupBox2.Controls.Add(label7);
+            groupBox2.Controls.Add(label6);
+            groupBox2.Controls.Add(label5);
+            groupBox2.Controls.Add(label4);
+            groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            groupBox2.ForeColor = System.Drawing.Color.Black;
+            groupBox2.Location = new System.Drawing.Point(624, 154);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new System.Drawing.Size(419, 477);
+            groupBox2.TabIndex = 0;
+            groupBox2.TabStop = false;
             // 
             // btnBilgiDegistir
             // 
-            this.btnBilgiDegistir.BackgroundImage = global::Restaurant.Properties.Resources.degistir;
-            this.btnBilgiDegistir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBilgiDegistir.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnBilgiDegistir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnBilgiDegistir.Location = new System.Drawing.Point(198, 353);
-            this.btnBilgiDegistir.Name = "btnBilgiDegistir";
-            this.btnBilgiDegistir.Size = new System.Drawing.Size(161, 100);
-            this.btnBilgiDegistir.TabIndex = 7;
-            this.btnBilgiDegistir.UseVisualStyleBackColor = true;
-            this.btnBilgiDegistir.Click += new System.EventHandler(this.btnBilgiDegistir_Click);
+            btnBilgiDegistir.BackgroundImage = Properties.Resources.degistir;
+            btnBilgiDegistir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            btnBilgiDegistir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnBilgiDegistir.Location = new System.Drawing.Point(198, 353);
+            btnBilgiDegistir.Name = "btnBilgiDegistir";
+            btnBilgiDegistir.Size = new System.Drawing.Size(161, 100);
+            btnBilgiDegistir.TabIndex = 7;
+            btnBilgiDegistir.UseVisualStyleBackColor = true;
+            btnBilgiDegistir.Click += btnBilgiDegistir_Click;
             // 
             // btnSil
             // 
-            this.btnSil.BackgroundImage = global::Restaurant.Properties.Resources.sil;
-            this.btnSil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSil.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnSil.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSil.Location = new System.Drawing.Point(21, 353);
-            this.btnSil.Name = "btnSil";
-            this.btnSil.Size = new System.Drawing.Size(171, 100);
-            this.btnSil.TabIndex = 6;
-            this.btnSil.UseVisualStyleBackColor = true;
-            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
+            btnSil.BackgroundImage = Properties.Resources.sil;
+            btnSil.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            btnSil.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnSil.Location = new System.Drawing.Point(21, 353);
+            btnSil.Name = "btnSil";
+            btnSil.Size = new System.Drawing.Size(171, 100);
+            btnSil.TabIndex = 6;
+            btnSil.UseVisualStyleBackColor = true;
+            btnSil.Click += btnSil_Click;
             // 
             // btnEkle
             // 
-            this.btnEkle.BackgroundImage = global::Restaurant.Properties.Resources.kaydet;
-            this.btnEkle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEkle.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnEkle.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnEkle.Location = new System.Drawing.Point(198, 247);
-            this.btnEkle.Name = "btnEkle";
-            this.btnEkle.Size = new System.Drawing.Size(161, 100);
-            this.btnEkle.TabIndex = 5;
-            this.btnEkle.UseVisualStyleBackColor = true;
-            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
+            btnEkle.BackgroundImage = Properties.Resources.kaydet;
+            btnEkle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            btnEkle.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnEkle.Location = new System.Drawing.Point(198, 247);
+            btnEkle.Name = "btnEkle";
+            btnEkle.Size = new System.Drawing.Size(161, 100);
+            btnEkle.TabIndex = 5;
+            btnEkle.UseVisualStyleBackColor = true;
+            btnEkle.Click += btnEkle_Click;
             // 
             // btnYeni
             // 
-            this.btnYeni.BackgroundImage = global::Restaurant.Properties.Resources.yeni;
-            this.btnYeni.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnYeni.Cursor = System.Windows.Forms.Cursors.Default;
-            this.btnYeni.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnYeni.Location = new System.Drawing.Point(21, 247);
-            this.btnYeni.Name = "btnYeni";
-            this.btnYeni.Size = new System.Drawing.Size(171, 100);
-            this.btnYeni.TabIndex = 4;
-            this.btnYeni.UseVisualStyleBackColor = true;
-            this.btnYeni.Click += new System.EventHandler(this.btnYeni_Click);
+            btnYeni.BackgroundImage = Properties.Resources.yeni;
+            btnYeni.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            btnYeni.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnYeni.Location = new System.Drawing.Point(21, 247);
+            btnYeni.Name = "btnYeni";
+            btnYeni.Size = new System.Drawing.Size(171, 100);
+            btnYeni.TabIndex = 4;
+            btnYeni.UseVisualStyleBackColor = true;
+            btnYeni.Click += btnYeni_Click;
             // 
             // txtGorevId2
             // 
-            this.txtGorevId2.Location = new System.Drawing.Point(365, 204);
-            this.txtGorevId2.Name = "txtGorevId2";
-            this.txtGorevId2.Size = new System.Drawing.Size(24, 35);
-            this.txtGorevId2.TabIndex = 3;
-            this.txtGorevId2.Visible = false;
+            txtGorevId2.Location = new System.Drawing.Point(365, 204);
+            txtGorevId2.Name = "txtGorevId2";
+            txtGorevId2.Size = new System.Drawing.Size(24, 35);
+            txtGorevId2.TabIndex = 3;
+            txtGorevId2.Visible = false;
             // 
             // cbGorevi
             // 
-            this.cbGorevi.FormattingEnabled = true;
-            this.cbGorevi.Location = new System.Drawing.Point(182, 204);
-            this.cbGorevi.Name = "cbGorevi";
-            this.cbGorevi.Size = new System.Drawing.Size(177, 37);
-            this.cbGorevi.TabIndex = 2;
-            this.cbGorevi.SelectedIndexChanged += new System.EventHandler(this.cbGorevi_SelectedIndexChanged);
+            cbGorevi.FormattingEnabled = true;
+            cbGorevi.Location = new System.Drawing.Point(182, 204);
+            cbGorevi.Name = "cbGorevi";
+            cbGorevi.Size = new System.Drawing.Size(177, 37);
+            cbGorevi.TabIndex = 2;
+            cbGorevi.SelectedIndexChanged += cbGorevi_SelectedIndexChanged;
             // 
             // txtSifreTekrar
             // 
-            this.txtSifreTekrar.Location = new System.Drawing.Point(182, 163);
-            this.txtSifreTekrar.Name = "txtSifreTekrar";
-            this.txtSifreTekrar.Size = new System.Drawing.Size(177, 35);
-            this.txtSifreTekrar.TabIndex = 1;
+            txtSifreTekrar.Location = new System.Drawing.Point(182, 163);
+            txtSifreTekrar.Name = "txtSifreTekrar";
+            txtSifreTekrar.Size = new System.Drawing.Size(177, 35);
+            txtSifreTekrar.TabIndex = 1;
             // 
             // txtSifre
             // 
-            this.txtSifre.Location = new System.Drawing.Point(182, 122);
-            this.txtSifre.Name = "txtSifre";
-            this.txtSifre.Size = new System.Drawing.Size(177, 35);
-            this.txtSifre.TabIndex = 1;
+            txtSifre.Location = new System.Drawing.Point(182, 122);
+            txtSifre.Name = "txtSifre";
+            txtSifre.Size = new System.Drawing.Size(177, 35);
+            txtSifre.TabIndex = 1;
             // 
             // txtSoyad
             // 
-            this.txtSoyad.Location = new System.Drawing.Point(182, 81);
-            this.txtSoyad.Name = "txtSoyad";
-            this.txtSoyad.Size = new System.Drawing.Size(177, 35);
-            this.txtSoyad.TabIndex = 1;
+            txtSoyad.Location = new System.Drawing.Point(182, 81);
+            txtSoyad.Name = "txtSoyad";
+            txtSoyad.Size = new System.Drawing.Size(177, 35);
+            txtSoyad.TabIndex = 1;
             // 
             // txtPersonelD
             // 
-            this.txtPersonelD.Location = new System.Drawing.Point(365, 40);
-            this.txtPersonelD.Name = "txtPersonelD";
-            this.txtPersonelD.Size = new System.Drawing.Size(24, 35);
-            this.txtPersonelD.TabIndex = 1;
-            this.txtPersonelD.Visible = false;
+            txtPersonelD.Location = new System.Drawing.Point(365, 40);
+            txtPersonelD.Name = "txtPersonelD";
+            txtPersonelD.Size = new System.Drawing.Size(24, 35);
+            txtPersonelD.TabIndex = 1;
+            txtPersonelD.Visible = false;
             // 
             // txtAd
             // 
-            this.txtAd.Location = new System.Drawing.Point(182, 40);
-            this.txtAd.Name = "txtAd";
-            this.txtAd.Size = new System.Drawing.Size(177, 35);
-            this.txtAd.TabIndex = 1;
+            txtAd.Location = new System.Drawing.Point(182, 40);
+            txtAd.Name = "txtAd";
+            txtAd.Size = new System.Drawing.Size(177, 35);
+            txtAd.TabIndex = 1;
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(21, 207);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(84, 29);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Görevi";
+            label8.AutoSize = true;
+            label8.ForeColor = System.Drawing.Color.White;
+            label8.Location = new System.Drawing.Point(21, 207);
+            label8.Name = "label8";
+            label8.Size = new System.Drawing.Size(84, 29);
+            label8.TabIndex = 0;
+            label8.Text = "Görevi";
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(21, 166);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(140, 29);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Şifre Tekrar";
+            label7.AutoSize = true;
+            label7.ForeColor = System.Drawing.Color.White;
+            label7.Location = new System.Drawing.Point(21, 166);
+            label7.Name = "label7";
+            label7.Size = new System.Drawing.Size(140, 29);
+            label7.TabIndex = 0;
+            label7.Text = "Şifre Tekrar";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(21, 125);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(63, 29);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Şifre";
+            label6.AutoSize = true;
+            label6.ForeColor = System.Drawing.Color.White;
+            label6.Location = new System.Drawing.Point(21, 125);
+            label6.Name = "label6";
+            label6.Size = new System.Drawing.Size(63, 29);
+            label6.TabIndex = 0;
+            label6.Text = "Şifre";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(21, 84);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(87, 29);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Soyadı";
+            label5.AutoSize = true;
+            label5.ForeColor = System.Drawing.Color.White;
+            label5.Location = new System.Drawing.Point(21, 84);
+            label5.Name = "label5";
+            label5.Size = new System.Drawing.Size(87, 29);
+            label5.TabIndex = 0;
+            label5.Text = "Soyadı";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(21, 43);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 29);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Adı";
+            label4.AutoSize = true;
+            label4.ForeColor = System.Drawing.Color.White;
+            label4.Location = new System.Drawing.Point(21, 43);
+            label4.Name = "label4";
+            label4.Size = new System.Drawing.Size(48, 29);
+            label4.TabIndex = 0;
+            label4.Text = "Adı";
             // 
             // lblBilgi
             // 
-            this.lblBilgi.AutoSize = true;
-            this.lblBilgi.BackColor = System.Drawing.Color.Transparent;
-            this.lblBilgi.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblBilgi.ForeColor = System.Drawing.Color.Red;
-            this.lblBilgi.Location = new System.Drawing.Point(108, 113);
-            this.lblBilgi.Name = "lblBilgi";
-            this.lblBilgi.Size = new System.Drawing.Size(129, 29);
-            this.lblBilgi.TabIndex = 1;
-            this.lblBilgi.Text = "giriş yapan";
+            lblBilgi.AutoSize = true;
+            lblBilgi.BackColor = System.Drawing.Color.Transparent;
+            lblBilgi.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            lblBilgi.ForeColor = System.Drawing.Color.Red;
+            lblBilgi.Location = new System.Drawing.Point(108, 113);
+            lblBilgi.Name = "lblBilgi";
+            lblBilgi.Size = new System.Drawing.Size(129, 29);
+            lblBilgi.TabIndex = 1;
+            lblBilgi.Text = "giriş yapan";
             // 
             // groupBox3
             // 
-            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox3.Controls.Add(this.button6);
-            this.groupBox3.Controls.Add(this.label9);
-            this.groupBox3.Controls.Add(this.label10);
-            this.groupBox3.Controls.Add(this.textBox8);
-            this.groupBox3.Controls.Add(this.textBox9);
-            this.groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox3.ForeColor = System.Drawing.Color.Black;
-            this.groupBox3.Location = new System.Drawing.Point(1068, 154);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(484, 259);
-            this.groupBox3.TabIndex = 2;
-            this.groupBox3.TabStop = false;
+            groupBox3.BackColor = System.Drawing.Color.Transparent;
+            groupBox3.Controls.Add(button6);
+            groupBox3.Controls.Add(label9);
+            groupBox3.Controls.Add(label10);
+            groupBox3.Controls.Add(textBox8);
+            groupBox3.Controls.Add(textBox9);
+            groupBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            groupBox3.ForeColor = System.Drawing.Color.Black;
+            groupBox3.Location = new System.Drawing.Point(1068, 154);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Size = new System.Drawing.Size(484, 259);
+            groupBox3.TabIndex = 2;
+            groupBox3.TabStop = false;
             // 
             // button6
             // 
-            this.button6.BackgroundImage = global::Restaurant.Properties.Resources.degistir;
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button6.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button6.Location = new System.Drawing.Point(174, 137);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(223, 100);
-            this.button6.TabIndex = 3;
-            this.button6.UseVisualStyleBackColor = true;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            button6.BackgroundImage = Properties.Resources.degistir;
+            button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            button6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            button6.Location = new System.Drawing.Point(174, 137);
+            button6.Name = "button6";
+            button6.Size = new System.Drawing.Size(223, 100);
+            button6.TabIndex = 3;
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(52, 87);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(195, 29);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "Yeni Şifre Tekrar";
+            label9.AutoSize = true;
+            label9.ForeColor = System.Drawing.Color.White;
+            label9.Location = new System.Drawing.Point(52, 87);
+            label9.Name = "label9";
+            label9.Size = new System.Drawing.Size(195, 29);
+            label9.TabIndex = 1;
+            label9.Text = "Yeni Şifre Tekrar";
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(51, 46);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(118, 29);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "Yeni Şifre";
+            label10.AutoSize = true;
+            label10.ForeColor = System.Drawing.Color.White;
+            label10.Location = new System.Drawing.Point(51, 46);
+            label10.Name = "label10";
+            label10.Size = new System.Drawing.Size(118, 29);
+            label10.TabIndex = 1;
+            label10.Text = "Yeni Şifre";
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(253, 84);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(166, 35);
-            this.textBox8.TabIndex = 0;
+            textBox8.Location = new System.Drawing.Point(253, 84);
+            textBox8.Name = "textBox8";
+            textBox8.Size = new System.Drawing.Size(166, 35);
+            textBox8.TabIndex = 0;
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(253, 43);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(166, 35);
-            this.textBox9.TabIndex = 0;
+            textBox9.Location = new System.Drawing.Point(253, 43);
+            textBox9.Name = "textBox9";
+            textBox9.Size = new System.Drawing.Size(166, 35);
+            textBox9.TabIndex = 0;
             // 
             // lvPersoneller
             // 
-            this.lvPersoneller.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4,
-            this.columnHeader5});
-            this.lvPersoneller.FullRowSelect = true;
-            this.lvPersoneller.HideSelection = false;
-            this.lvPersoneller.Location = new System.Drawing.Point(6, 21);
-            this.lvPersoneller.Name = "lvPersoneller";
-            this.lvPersoneller.Size = new System.Drawing.Size(457, 178);
-            this.lvPersoneller.TabIndex = 3;
-            this.lvPersoneller.UseCompatibleStateImageBehavior = false;
-            this.lvPersoneller.View = System.Windows.Forms.View.Details;
-            this.lvPersoneller.SelectedIndexChanged += new System.EventHandler(this.lvPersoneller_SelectedIndexChanged);
+            lvPersoneller.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] { columnHeader1, columnHeader2, columnHeader3, columnHeader4, columnHeader5 });
+            lvPersoneller.FullRowSelect = true;
+            lvPersoneller.Location = new System.Drawing.Point(6, 21);
+            lvPersoneller.Name = "lvPersoneller";
+            lvPersoneller.Size = new System.Drawing.Size(457, 178);
+            lvPersoneller.TabIndex = 3;
+            lvPersoneller.UseCompatibleStateImageBehavior = false;
+            lvPersoneller.View = System.Windows.Forms.View.Details;
+            lvPersoneller.SelectedIndexChanged += lvPersoneller_SelectedIndexChanged;
             // 
             // columnHeader1
             // 
-            this.columnHeader1.Text = "Personel Id";
-            this.columnHeader1.Width = 0;
+            columnHeader1.Text = "Personel Id";
+            columnHeader1.Width = 0;
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Personel Görev Id";
-            this.columnHeader2.Width = 0;
+            columnHeader2.Text = "Personel Görev Id";
+            columnHeader2.Width = 0;
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Görevi";
-            this.columnHeader3.Width = 150;
+            columnHeader3.Text = "Görevi";
+            columnHeader3.Width = 150;
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "Adı";
-            this.columnHeader4.Width = 150;
+            columnHeader4.Text = "Adı";
+            columnHeader4.Width = 150;
             // 
             // columnHeader5
             // 
-            this.columnHeader5.Text = "Soyadı";
-            this.columnHeader5.Width = 150;
+            columnHeader5.Text = "Soyadı";
+            columnHeader5.Width = 150;
             // 
             // btnCikis
             // 
-            this.btnCikis.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCikis.BackgroundImage")));
-            this.btnCikis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnCikis.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnCikis.Location = new System.Drawing.Point(196, 756);
-            this.btnCikis.Name = "btnCikis";
-            this.btnCikis.Size = new System.Drawing.Size(82, 71);
-            this.btnCikis.TabIndex = 14;
-            this.btnCikis.UseVisualStyleBackColor = true;
-            this.btnCikis.Click += new System.EventHandler(this.btnCikis_Click);
+            btnCikis.BackgroundImage = (System.Drawing.Image)resources.GetObject("btnCikis.BackgroundImage");
+            btnCikis.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            btnCikis.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnCikis.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            btnCikis.Location = new System.Drawing.Point(196, 756);
+            btnCikis.Name = "btnCikis";
+            btnCikis.Size = new System.Drawing.Size(82, 71);
+            btnCikis.TabIndex = 14;
+            btnCikis.UseVisualStyleBackColor = true;
+            btnCikis.Click += btnCikis_Click;
             // 
             // btnGeriDon
             // 
-            this.btnGeriDon.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnGeriDon.BackgroundImage")));
-            this.btnGeriDon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnGeriDon.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnGeriDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnGeriDon.Location = new System.Drawing.Point(108, 756);
-            this.btnGeriDon.Name = "btnGeriDon";
-            this.btnGeriDon.Size = new System.Drawing.Size(82, 71);
-            this.btnGeriDon.TabIndex = 15;
-            this.btnGeriDon.UseVisualStyleBackColor = true;
-            this.btnGeriDon.Click += new System.EventHandler(this.btnGeriDon_Click);
+            btnGeriDon.BackgroundImage = (System.Drawing.Image)resources.GetObject("btnGeriDon.BackgroundImage");
+            btnGeriDon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            btnGeriDon.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            btnGeriDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            btnGeriDon.Location = new System.Drawing.Point(108, 756);
+            btnGeriDon.Name = "btnGeriDon";
+            btnGeriDon.Size = new System.Drawing.Size(82, 71);
+            btnGeriDon.TabIndex = 15;
+            btnGeriDon.UseVisualStyleBackColor = true;
+            btnGeriDon.Click += btnGeriDon_Click;
             // 
             // groupBox4
             // 
-            this.groupBox4.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox4.Controls.Add(this.lvPersoneller);
-            this.groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.groupBox4.ForeColor = System.Drawing.Color.Black;
-            this.groupBox4.Location = new System.Drawing.Point(624, 637);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(471, 212);
-            this.groupBox4.TabIndex = 16;
-            this.groupBox4.TabStop = false;
+            groupBox4.BackColor = System.Drawing.Color.Transparent;
+            groupBox4.Controls.Add(lvPersoneller);
+            groupBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            groupBox4.ForeColor = System.Drawing.Color.Black;
+            groupBox4.Location = new System.Drawing.Point(624, 637);
+            groupBox4.Name = "groupBox4";
+            groupBox4.Size = new System.Drawing.Size(471, 212);
+            groupBox4.TabIndex = 16;
+            groupBox4.TabStop = false;
             // 
             // frmAyarlar
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Restaurant.Properties.Resources.arkaplan;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1564, 851);
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.btnCikis);
-            this.Controls.Add(this.btnGeriDon);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.lblBilgi);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmAyarlar";
-            this.Text = "frmAyarlar";
-            this.Load += new System.EventHandler(this.frmAyarlar_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.arkaplan;
+            BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            ClientSize = new System.Drawing.Size(1564, 851);
+            Controls.Add(groupBox4);
+            Controls.Add(btnCikis);
+            Controls.Add(btnGeriDon);
+            Controls.Add(groupBox3);
+            Controls.Add(lblBilgi);
+            Controls.Add(groupBox2);
+            Controls.Add(groupBox1);
+            FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            Name = "frmAyarlar";
+            Text = "frmAyarlar";
+            WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            Load += frmAyarlar_Load;
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
+            groupBox4.ResumeLayout(false);
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
